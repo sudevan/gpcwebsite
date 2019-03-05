@@ -1,0 +1,101 @@
+
+<?php
+ // INCLUDE THE phpToPDF.php FILE
+require("fpdf181/fpdf.php"); 
+include("tcprivate.inc");	
+
+
+/*getting data from POST and store it into student structure*/
+//echo "Hello";
+//print_r($_POST, $return = null);
+foreach ($_POST as $key=>$value) {
+	$student->$key=$value;
+}
+
+$student->name=strtoupper($student->name);
+
+$dateobj=date_create($student->dob);
+$student->dob=date_format($dateobj,"d/m/Y");
+
+$dateobj=date_create($student->lastAttendanceDate);
+$student->lastAttendanceDate=date_format($dateobj,"d/m/Y");
+
+$dateobj=date_create($student->promotiondate);
+$student->promotiondate=date_format($dateobj,"d/m/Y");
+
+$dateobj=date_create($student->rollRemovedDate);
+$student->rollRemovedDate=date_format($dateobj,"d/m/Y");
+
+$student->address = preg_replace('#\R+#', ' ', $student->address);
+
+$filename=$datadirectory."/".$student->admno.".json";
+$fp = fopen($filename, 'w');
+fwrite($fp, json_encode($student));
+fclose($fp);
+
+
+$applicationData["Department "]= $student->department;
+$applicationData["Roll No "]= $student->rollno;
+$applicationData["Admission No "]= $student->admno;
+$applicationData["Name of the student (in block letters) "]= $student->name;
+$applicationData["Address (Permanent) "]= $student->address;
+$applicationData["Year Of Studies"]= $student->yearOfStudy;
+$applicationData["Particulars regarding Concession or scholarship obtained if any"]= $student->feeconcession;
+$applicationData["Reason for leaving"]= $student->reasonForLeaving;
+$applicationData["Total No of working days"]= $student->workingDays;
+$applicationData["dob "]= $student->dob;
+$applicationData["Dues if any to be furnished below"]= "";
+$dueclearlist=array("Head of section"=>"","Workshop"=>"","Applied Science lab"=>"","Library"=>"","Co-op Society"=>"","Physical education"=>"","NSS"=>"","NCC"=>"",
+"Hostel"=>"","Academic section"=>"");
+$applicationData["Dues if any to be furnished below"]=$dueclearlist;
+
+
+$applicationData["Amount of caution deposit"]= "500 Rupees";
+$applicationData["signature of student"]="";
+$applicationData["Date of application"]=$student->dateofApplication;
+$applicationData["Order of the principal"]="";
+
+/*variables from form*/
+
+
+$slNO=1; //global variable for item index
+$subItemNo=1; //for due list
+
+
+
+$pdf=new FPDF('P','mm','A4');
+$pdf->AddPage();
+
+/*printing border*/
+$pdf->Rect(5, 5, 200, 287, 'D');
+
+/*printing the heading*/
+$pdf->SetFont($font,"BU",16);
+$pdf->MultiCell(0,7,"{$collegName}",0,"C");
+$pdf->Ln(6);
+$pdf->Cell(0,0,$applicationHeader,0,1,C);
+$pdf->Ln(5);
+
+
+$pdf->SetFont($font,"",12);
+/*printing left column description and data*/
+foreach ($applicationData as $key=>$value)
+{
+	if(is_array($value)) {
+		
+		foreach ($value as $subkey=>$subvalue)
+		{
+			/*in sub menu print with a tab offset*/
+			printfield($pdf,$subkey,$subvalue,4);
+		}
+	}	
+	else {
+		printfield($pdf,$key,$value);
+		
+	}
+	
+}
+$pdf->Cell(160,10,"Principal",0,0,"R");
+$pdf->output();
+
+?>

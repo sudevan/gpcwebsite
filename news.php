@@ -24,21 +24,21 @@ $search_keyword = '';
 	$row_count = $pagination_statement->rowCount();
 	if(!empty($row_count)){
 		$per_page_html .= "<div style='text-align:center;margin:20px 0px;'>";
-		$page_count=ceil($row_count/4);
-		if($page_count>1) {
-			
-			for($i=1;$i<=$page_count;$i++){
-				
-				if($i==$page){
-					
-					
-					$per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page current" />';
-				} else {
-					$per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page" />';
-				}
-			}
-		}
-		$per_page_html .= "</div>";
+		$page_count=ceil($row_count/3);
+        if($page_count>1) {
+            
+            for($i=1;$i<=$page_count;$i++){
+                
+                if($i==$page){
+                    
+                    
+                    $per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page current" />';
+                } else {
+                    $per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page" />';
+                }
+            }
+        }
+        $per_page_html .= "</div>";
 	}
 	
 	$query = $sql.$limit;
@@ -52,288 +52,66 @@ $search_keyword = '';
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
 <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-   <title>GPTC Palakkad</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Government Polytechnic College">
-    <meta name="author" content="Esmet">
-    <meta charset="UTF-8">
+<!--[if gt IE 8]><!--> 
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
-        
-    <!-- CSS Bootstrap & Custom -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-    <link href="css/animate.css" rel="stylesheet" media="screen">
     
-    <link href="style.css" rel="stylesheet" media="screen">
-    <link href="css/custom.css" rel="stylesheet" media="screen">   
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    
-    <!-- JavaScripts -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    
-    <!--[if lt IE 8]>
-	<div style=' clear: both; text-align:center; position: relative;'>
-            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
-        </div>
-    <![endif]-->
-</head>
-<body>
-
-    <!-- This one in here is responsive menu for tablet and mobiles -->
-    <div class="responsive-navigation visible-sm visible-xs">
-        <a href="#" class="menu-toggle-btn">
-            <i class="fa fa-bars"></i>
-        </a>
-        <div class="responsive_menu">
-            <ul class="main_menu">
-             
-                             <li ><a href="index.php">Home</a></li>
-                <li class="active"><a href="news.php">News</a></li>
-                <li ><a href="events.php">Events</a></li>
-                <li ><a href="departments.html">Departments</a> </li>
-                <li><a href="activities.html">Activities</a> </li>
-                <li><a href="staff.html">Staff</a> </li>
-                <li><a href="albums.php">Gallery</a></li>
-                <li><a href="links.html">Links</a> </li>
-                <li><a href="#">Students Union</a> </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul> <!-- /.main_menu -->
-            <ul class="social_icons">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul> <!-- /.social_icons -->
-        </div> <!-- /.responsive_menu -->
-    </div> <!-- /responsive_navigation -->
-
-
-    <header class="site-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 header-left">
-                    
-                </div> <!-- /.header-left -->
-
-                <div class="col-md-4">
-                    <div class="logo">
-                        <a href="index.html" title="Universe" rel="home">
-                            <img src="images/logo.png" alt="palakkad poly logo">
-                        </a>
-                    </div> <!-- /.logo -->
-                </div> <!-- /.col-md-4 -->
-
-                <div class="col-md-4 header-right">
-                    
-                </div> <!-- /.header-right -->
-            </div>
-        </div> <!-- /.container -->
-
-        <div class="nav-bar-main" role="navigation">
-            <div class="">
-                <nav class="main-navigation clearfix visible-md visible-lg" role="navigation">
-                        <ul class="main-menu sf-menu">
-                            
-                             <li ><a href="index.php">Home</a></li>
-                <li class="active"><a href="news.php">News</a></li>
-                <li ><a href="events.php">Events</a></li>
-                <li ><a href="departments.html">Departments</a> </li>
-                <li><a href="activities.html">Activities</a> </li>
-                <li><a href="staff.html">Staff</a> </li>
-                <li><a href="albums.php">Gallery</a></li>
-                <li><a href="links.html">Links</a> </li>
-                <li><a href="#">Students Union</a> </li>
-                <li><a href="contact.html">Contact</a></li>
-                        </ul> <!-- /.main-menu -->
-
-                        <ul class="social-icons pull-right">
-                            <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-                        </ul> <!-- /.social-icons -->
-                </nav> <!-- /.main-navigation -->
-            </div> <!-- /.container -->
-        </div> <!-- /.nav-bar-main -->
-
-    </header> <!-- /.site-header -->
-    
-    
-    
+    <?php include ("head.php"); ?>
     <!-- Being Page Title -->
    
 
 
-    <div class="container">
-        <div class="row">
-<form id="frm" action="" method="post">
-            <!-- Here begin Main Content -->
-            <div class="col-md-8">
-            <div class="row">
-<?php 
-//~ $query="SELECT `id`, DATE_FORMAT(date,'%d/%m/%Y') as date, `header`, `content`, `content1`, `image` FROM `sample`";
+
+
+
+              <section class="blog py-12" id="blog" style="background-image: url(images/cover.jpg);background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */">
+        <div class="container py-xl-12 py-lg-3">
+            <h3 class="text-bl text-center font-weight-bold mb-2" style="color: white">News</h3>
+  
+           
+                
+                <!-- blog grid -->
+                <form id="frm" action="" method="post">
+                    <?php 
+//~ $query="SELECT `id`, DATE_FORMAT(date,'%d/%m/%Y') as date, `header`, `content`, `image` FROM `sample`";
 //~ $co=$conn->query($query);
 //~ $co->setfetchmode(PDO::FETCH_ASSOC);
 foreach($result as $ca){
 
 ?>
-                <div class="">
-                    <div class="col-md-6">
-                        <div class="blog-post-container">
-                            <div class="blog-post-image">
-                                <img src="admin/<?php  echo $ca['image']; ?>" alt="">
-                                <div class="blog-post-meta">
-                                    <ul>
-										
-                                        <li><i class="fa fa-calendar-o"></i><?php echo $ca['date']; ?></li>
-                                       
-                                    </ul>
-                                </div> <!-- /.blog-post-meta -->
-                            </div> <!-- /.blog-post-image -->
-                            <div class="blog-post-inner">
-                                <h3 class="blog-post-title"><a href="<?php echo $ca['link'];?>" target="_blank"><?php echo $ca['header']; ?></a></h3>
+                <div class="col-lg-12 col-md-12 px-12 mt-md-0 mt-12">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a href="#">
+                                <img class="card-img-bottom" src="admin/<?php  echo $ca['image']; ?>" alt="">
+                                <span class="fa fa-newspaper-o  post-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-colors let-spa mb-3"><i class="fa fa-calendar-o"></i><?php echo $ca['date']; ?></h6>
+                            <h5 class="blog-title card-title font-weight-bold">
+                                <a href="<?php echo $ca['link'];?>" target="_blank"><?php echo $ca['header']; ?></a>
                                 <p><?php echo $ca['content']; ?></p>
                                 <p><strong><?php echo $ca['content1']; ?></strong></p>
-                              
-                            </div>
-                        </div> <!-- /.blog-post-container -->
-                    </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
-                <?php } ?>
-               
-                <div class="row" style="display:none">
-                    <div class="col-md-12">
-                        <div class="prev-next-post clearfix">
-                            <span class="whiteBtn">
-                                <a href="" class="prev"><i class="fa fa-angle-left"></i>Older</a>
-                            </span>
-                            <span class="whiteBtn">
-                                <a href="" class="next">Newer<i class="fa fa-angle-right"></i></a>
-                            </span>
+                            </h5>
+                            
                         </div>
-                    </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
-</div>
+                    </div>
+                </div>
+                <!-- //blog grid -->
+                         <?php } ?>
+                            
+
            <?php echo $per_page_html; ?>
 
-           </form>    
-
-            </div> <!-- /.col-md-8 -->
-
-            <!-- Here begin Sidebar -->
-            <div class="col-md-4">
-                
-                
-
-
-                
-
-                
-
-            </div> <!-- /.col-md-4 -->
+           </form>   
+         
+            </div>
+      
+    </section>
+          
     
-        </div> <!-- /.row -->
-    </div> <!-- /.container -->
-    <!-- begin The Footer -->
-        <!-- begin The Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget-title">Contact Us</h4>
-                        <p>Government Polytechnic College <br>Kodumbu P O<br>Palakkad 678551<br><br>Ph:0491 257 2640</p>
-                    </div>
-                </div>
-             <div class="col-md-2">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget-title">Favourites</h4>
-                        <ul class="list-links">
-                            <li class="active"><a href="index.php">Home</a></li>
-                            <li><a href="news.php">News</a></li>
-                            <li><a href="events.php">Events</a></li>
-                            <li><a href="departments.html">Departments</a></li>
-                            <li><a href="activities.html">Activities</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget-title"><br></h4>
-                        <ul class="list-links">
-                            <li><a href="staff.html">Staff</a></li>
-                            <li><a href="albums.php">Gallery</a></li>
-                            <li><a href="links.html">Links</a></li>
-                            <li><a href="#">Students Union</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget-title">Useful Links</h4>
-                        <ul class="list-links">
-                            <li><a href="links.html">Exam registration/Results</a></li>
-                            <li><a href="links.html">syllabus and curriculum</a></li>
-                            <li><a href="links.html">AICTE Approval</a></li>
-                            <li><a href="links.html">AICTE Schemes and Scholarships</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-md-2">
-                    <div class="footer-widget">
-                        <h4 class="footer-widget-title"><br></h4>
-                        <ul class="list-links">
-                            
-                            <li><a href="links.html">National Digital Library</a></li>
-                            <li><a href="links.html">DoTE</a></li>
-                        </ul>
-                    </div>
-                </div>
-               <!-- <div class="col-md-3">
-                    <div class="footer-widget">
-                        <ul class="footer-media-icons">
-                            
-                        </ul>
-                    </div>
-                </div>-->
-            </div> <!-- /.row -->
-
-            <div class="bottom-footer">
-                <div class="row">
-                    <div class="col-md-5">
-                        <p class="small-text">&copy; Copyright 2017 GPTC Palakkad.  designed by <a href="http://www.techcloudinnovations.com" target="_blank">TechCloud Innovations.</a></p>
-                    </div> <!-- /.col-md-5 -->
-                    <div class="col-md-7">
-                        <ul class="footer-nav">
-                            <li><a href="#" class="fa fa-facebook"></a></li>
-                            <li><a href="#" class="fa fa-twitter"></a></li>
-                            <li><a href="#" class="fa fa-google-plus"></a></li>
-                            <li><a href="#" class="fa fa-youtube"></a></li>
-                            <!--<li><a href="#" class="fa fa-linkedin"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                            <li><a href="#" class="fa fa-apple"></a></li>
-                            <li><a href="#" class="fa fa-rss"></a></li>-->
-                        </ul>
-                    </div> <!-- /.col-md-7 -->
-                </div> <!-- /.row -->
-            </div> <!-- /.bottom-footer -->
-
-        </div> <!-- /.container -->
-    </footer> <!-- /.site-footer -->
-
+    <?php include("tail.php"); ?>
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>

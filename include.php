@@ -1,8 +1,8 @@
  <?php date_default_timezone_set("Asia/Kolkata"); 
 	
 	$servername 	= "localhost";
-	$username 	= "gpc_user";
-	$password 	= "1{IaTIGG0^c$";
+	$username 	= "root";
+	$password 	= "12345";
 	$db		= "gpcpalakkad";
 	  try {
 			$conn = new PDO("mysql:host=localhost;dbname=$db", $username, $password);

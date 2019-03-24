@@ -72,7 +72,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<section class="about-bottom" id="services">
 		<div class="container pb-lg-4">
 			<div class="row bg-colors text-center">
-				<div class="col-md-4 service-subgrids">
+				<div style="background: brown" class="col-md-4 service-subgrids">
 					<span class="fa fa-book"></span>
 					<div class="w3ls-about-grid py-lg-5 py-md-4 py-5 px-3">
 						<h4 class="text-wh font-weight-bold mb-3">Courses</h4>
@@ -123,7 +123,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<span class="fa fa-linode" style="color: black"></span>
 				</div>
-				<div class="col-md-4 service-subgrids">
+				<div style="background: darkslategrey" class="col-md-4 service-subgrids">
 					<div class="w3ls-about-grid py-lg-5 py-md-4 py-5 px-3">
 						<h4 class="text-wh font-weight-bold mb-3">Facilities</h4>
 						<ul class="Courses">
@@ -475,7 +475,7 @@ The College also offers Part-time diploma courses in most of the disciplines for
 			<div class="row mx-sm-0 mx-2">
 				<!-- map -->
 				<div class="col-lg-6 map" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345275!2d-118.69191921441556!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+Angeles%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1522474296007" allowfullscreen=""></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6336319571315!2d76.69158634974056!3d10.762693162353925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86c3683a10f8b%3A0x8cce89f346b04ca5!2z4LS44LW84LSV4LWN4LSV4LS-4LW8IOC0quC1i-C0s-C0v-C0n-C1huC0leC1jeC0qOC0v-C0leC1jSDgtJXgtYvgtLPgtYfgtJzgtY0sIOC0quC0vuC0suC0leC1jeC0leC0vuC0n-C1jQ!5e0!3m2!1sml!2sin!4v1553401182005" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				<!-- //map -->
 				<!-- contact form -->

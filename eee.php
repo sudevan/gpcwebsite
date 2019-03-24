@@ -14,7 +14,7 @@
                 
                 <div class="col-lg-5 pr-xl-5" style="border:2px solid black;background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */">
- <img src="images/dept/elechd.jpg" alt="">
+ <img src="images/elect.jpg" alt="" style="width: 100%;height: auto;">
                    
             </div>
                 <div class="col-lg-7 pl-xl-5 mt-lg-0 mt-4">

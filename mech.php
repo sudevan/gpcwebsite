@@ -5,7 +5,7 @@
             <center><h1>Mechanical Engineering</h1></center>
             <div class="row">
                 <div class="col-lg-5 pr-xl-5" style="border:2px solid black;background-repeat: no-repeat; background-size: cover;">
-                     <img src="images/dept/mechhd.jpg" alt="">                   
+                     <img src="images/mechhd.jpg" alt="" style="width: 100%;height: auto;">                   
                 </div>
                 <div class="col-lg-7 pl-xl-5 mt-lg-0 mt-4">
                     <p style="text-align: justify;color: black"><h1>Vision</h1>

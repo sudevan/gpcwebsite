@@ -37,50 +37,65 @@
 	<!-- header 2 -->
 	<!-- navigation -->
 	<div class="main-top" style="border-bottom: 2px solid black;background: gainsboro">
-		<div class="container d-lg-flex" style="">
+
 			<!-- logo -->
+		<div class="container d-lg-flex" style="">
 			<h1 class="logo-style-res float-left">
 				<a class="navbar-brand" href="index.php">
-					<img src="images/logo2.png" alt="" style="width: 100%;height: auto;" class="img logo-img">
+					<img src="images/logo2-1.png" alt="" style="width: 100%;height: auto;" class="img logo-img">
 				</a>
 			</h1>
+			<p><center><h4 style="margin: 0">Govt. Polytechnic College Palakkad</h4><br>
+			kodumbu(PO),Palakkad-678581<p style="color: black;list-style: none;"><i class="fa fa-phone"></i>&nbsp;&nbsp; Ph : 0491 257 2640</p> <p style="color: black;list-style: none;"><i class="fa fa-envelope"></i> <a href="mailto:palakkadpolytechnic@gmail.com"> &nbsp;&nbsp;palakkadpolytechnic@gmail.com</a> </p></center></p>
+
 			<!-- //logo -->
 			<style type="text/css">
 				.colwhite{
 					color: white;
 				}
 			</style>
+	
+                        
+                
+                       
+              
+                </div>
 			<!-- nav -->
-			<div class="nav_w3ls mx-lg-auto">
+			<div style="border:1px solid black;line-height:50%">
+			<div class="nav_w3ls mx-lg-auto" style="position: relative;">
 				<nav>
-					<label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
+					<label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true" style="background: transparent;outline: none;"></span></label>
 					<input type="checkbox" id="drop">
 					<ul class="menu mx-lg-auto">
 						<li><a href="index.php" class=" active">Home</a></li>
 						<li><a href="departments.php">Departments</a> </li>
+						<li><a href="images.php">OLAM 2K19</a></li>
 						
 						 <li><a href="albums.php">Gallery</a></li>
 						 <li><a href="http://117.211.126.232/moodle">Moodle</a></li>
+						  <li><a href="news.php">News</a></li>
+						  <li><a href="events.php">Events</a></li>
+						  <li><a href="activities.php">Activities</a> </li>
+                                 <li><a href="#">Staff</a> </li>
+                                
+                        
+                                 <li><a href="links.php">Links</a> </li>
+                                 
+                                
+                                 <li><a href="reg.php">Alumni</a></li>
                           <li><a href="contact.php">Contact</a></li>
 						
 					    <li>
-							<label for="drop-2" class="toggle toogle-2">Menu<span class="fa fa-bars" aria-hidden="true"></span>
+							<label for="drop-2" class="toggle toogle-2">More<span class="fa fa-bars" aria-hidden="true"></span>
 							</label>
 							<a href="#"><span class="fa fa-bars" aria-hidden="true"></span>Menu</a>
 							<input type="checkbox" id="drop-2">
 							<ul>
 								 
-                				 <li><a href="news.php">News</a></li>
-                                 <li><a href="events.php">Events</a></li>
-                                
-                                 <li><a href="activities.php">Activities</a> </li>
-                                 <li><a href="staff.php">Staff</a> </li>
                                  <li><a href="grievance-cell.php">Grievance Redressal</a> </li>
                         
-                                 <li><a href="links.php">Links</a> </li>
                                  <li><a href="#">Students Union</a> </li>
-                                
-                                 <li><a href="reg.php">Alumni</a></li>
+                           
                                  
 							</ul>
 					    </li>

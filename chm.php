@@ -10,7 +10,7 @@
             <center><h1>Computer Hardware Engineering</h1></center>
             <div class="row">
                 <div class="col-lg-5 pr-xl-5" style="border:2px solid black;background-repeat: no-repeat; background-size: cover;">
-                     <img src="images/dept/comphd.jpg" style="size: ;">
+                     <img src="images/dept/comphd.jpg" style="width: 100%;height: auto; ;">
                    
                 </div>
                 <div class="col-lg-7 pl-xl-5 mt-lg-0 mt-4">

@@ -65,7 +65,7 @@ $search_keyword = '';
    
     <!-- blog -->
     <section class="blog py-12" id="blog" style="background-image: url(images/cover.jpg);background-repeat: no-repeat; background-size: cover;">
-        <div class="container py-xl-12 py-lg-3">
+       <div class="container col-xl-6 col-lg-6 col-md-6 col-sm-12">
             <h3 class="text-bl text-center font-weight-bold mb-2" style="color: white">Events</h3>
   
            
@@ -79,7 +79,7 @@ $search_keyword = '';
 foreach($result as $ca){
 
 ?>
-                <div class="col-lg-12 col-md-12 px-12 mt-md-0 mt-12">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 10px">
                     <div class="card">
                         <div class="card-header p-0 position-relative">
                             <a href="#">

@@ -7,7 +7,7 @@
             <div class="row no-gutters">
                 <div class="col-md-4 gallery-grid1">
                     <a href="chm.php">
-                        <img src="images/comp.jpg">
+                        <img src="images/comp.jpg"  class="img-fluid">
                         <center><h6 style="margin-bottom: 10px;color: black">Computer Hardware Engineering</h6></center>
                 </div>
                 <div class="col-md-4 gallery-grid1">

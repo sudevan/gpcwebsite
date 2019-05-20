@@ -1,0 +1,126 @@
+@media only screen and (max-width: 600px) {
+			body{
+    padding: 0px;
+    margin: 0px;
+}
+		   .text-responsive{
+		   	font-size: 2vw;
+		   }
+		   .text-responsive-sm{
+		   	font-size: 1.7vw;
+		   }
+           .history{
+           	border-right:none;
+           }
+
+        }
+		nav ul{
+			margin: 0px;
+			padding: 0px;
+		}
+		nav ul li {
+		
+			/*line-height: 50px;*/
+			
+		}
+		nav ul li a{
+			display: block;
+			padding: 10px;
+			padding-top:0;
+			line-height: 30px;
+			margin: 0;
+		}
+	nav ul li:hover{
+		border-bottom: 2px solid white;
+		border-top: 2px solid white;
+		/*border-left: 2px solid white;
+		border-right: 2px solid white;*/
+		background: #003a6a;
+		color: white;
+
+	}
+	
+	nav ul li a:hover{
+		
+		color: white;
+	}
+	.head ol{
+		list-style: none;
+	}
+	.color-white{
+		color: white;
+	}
+	.dropdown-menu-li{
+    min-width: 30vw;
+}
+#vision_and_mission{
+	background-color:rgba(220,220,220, 0.3);
+	color: black;
+	font-family: Verdana,sans-serif;
+}
+.widget-head{
+    background-color:rgba(220,220,220, 0.3);
+	color: black;
+	font-family: Verdana,sans-serif;
+	border:2px solid grey;
+}
+.card-body{
+	background-color:rgba(220,220,220);
+	color: black;
+	font-family: Verdana,sans-serif;
+	border:2px solid grey;
+	  transition: all 0.5s ease;
+
+
+}
+.nomargin{
+	margin: 0;
+}
+.nopadding{
+	padding: 5px;
+}
+.shadow{
+	-moz-box-shadow:    0px 0px 15.69px 3.31px rgba(204, 204, 223, 0.44);
+   -webkit-box-shadow: 0px 0px 15.69px 3.31px rgba(204, 204, 223, 0.44);
+   box-shadow:         0px 0px 15.69px 3.31px rgba(204, 204, 223, 0.44);
+}
+.card-body:hover{
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+   margin: 3px;
+
+}
+.col-lg-5{
+	padding: 10px;
+}
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc;
+    }
+    .row{
+    	padding: 10px;
+    }
+    .blue-bb{
+    	background-color: #181e38;
+    }
+    .grey-bb{
+    	background-color: #f5f5f5;
+    }
+    #principal-2{
+    	margin-top: 20px;
+    }
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 0px;
+}

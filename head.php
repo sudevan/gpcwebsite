@@ -33,49 +33,31 @@
 	<!-- //Web-Fonts -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style-custom.css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
 	<style type="text/css">
 		body{
     padding: 0px;
     margin: 0px;
 }
 	</style>
-	<style type="text/css">
-		nav ul{
-			margin: 0px;
-			padding: 0px;
-		}
-		nav ul li a{
-		
-			line-height: 50px;
-		}
-	nav ul li:hover{
-		border-bottom: 2px solid white;
-		border-top: 2px solid white;
-		/*border-left: 2px solid white;
-		border-right: 2px solid white;*/
-		background: grey;
-		color: white;
-
-	}
-	
-	nav ul li a:hover{
-		
-		color: white;
-	}
-	
-</style>
 </head>
 
 <body>
-	<nav class="navbar navbar-dark navbar-expand-lg navbar-light  " style="background: #2f4f4f; padding: 0px;margin:0px;">
+	<nav class="navbar navbar-dark navbar-expand-lg navbar-light  " style="background: #123073; padding: 0px;margin:0px;height:auto;">
 		
 		 
-		<a class="navbar-brand" href="#">
-          <img src="logo1.png" height="75" width="400" alt="" style="border-color-bottom: 10px solid red" class="img-fluid">
+		<a class="navbar-bran" href="#">
+          <img src="logo1.png" style="height:auto;"  alt="" style="border-color-bottom: 10px solid red" class="img-fluid">
         </a>
-       
-        <div class="mr-auto-auto" style="color: white; margin-right:10px"><i class="fa fa-phone"><a href=""></a></i>0491 257 2640</li></div>
-        <div class="mr-auto-auto" style="color: white"><i class="fa fa-envelope"></i> <a style="color: white;text-transform: lowercase;" href="mailto:palakkadpolytechnic@gmail.com">palakkadpolytechnic@gmail.com</a></div>
+         <div class="ml-auto head">
+         	<ol>
+         		<li class="color-white"><i class="fa fa-phone"><a href=""></a></i>0491 257 2640</li>
+         		<li class="color-white"><i class="fa fa-envelope"></i> <a style="color: white;text-transform: lowercase;" href="mailto:palakkadpolytechnic@gmail.com">palakkadpolytechnic@gmail.com</a></li>
+         	</ol>
+         </div>
+        
      
   <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -83,28 +65,49 @@
 
 
 </nav>
-<nav class="navbar navbar-dark navbar-expand-lg navbar-light" style="background:#ab9333;padding: 0px;border-bottom: 1px solid #2f4f4f">
+<nav class="navbar navbar-dark navbar-expand-lg   navbar-light sticky-top" style="background:rgba(220,220,200);padding: 0px;border-bottom: 1px solid #2f4f4f">
   
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto ">
+    <ul class="navbar-nav">
    			    <li class=""><a href="index.php">Home</a></li>
-   			    <li class="nav-item"><a href="images.php">OLAM2K19</a></li>
-                <li><a href="news.php">News</a></li>
+   			    <li class="dropdown">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Placement
+			        <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="https://docs.google.com/document/d/e/2PACX-1vSX7-fmQGlSm7pATn2sBhWh6ubw16uW2quQKzDg3x1EG7KZYy5FY8y2ZgzMFrhy8SY4QkgtMdBPFtXL/pub">Placement Brochure</a> </li>
+			         
+			        </ul>
+      			</li>
+                <li><a href="photos.php">Gallery</a></li>
                 <li><a href="events.php">Events</a></li>
-                <li><a href="departments.php">Departments</a> </li>
-                <li><a href="activities.php">Activities</a> </li>
+				       
+				<li><a href="activities.php">Activities</a> </li>
+				<li class="dropdown">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+			        <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="mech.php">MechanicalEngineering</a> </li>
+			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="civil.php">Civil Engineering</a> </li>
+			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="eee.php">Electrical nad Electronics Engineering</a></li>
+			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="chm.php">Computer Harwdare Engineering</a></li>
+			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="electronics.php">Electronics Engineering</a></li>
+			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="it.php">Instrumentation Technology</a></li>
+			        </ul>
+      			</li>
                 
-                <li><a href="albums.php">Gallery</a></li>
-                <li><a href="links.php">Links</a> </li>
+<!--                 <li><a href="albums.php">Gallery</a></li>
+ -->                <li><a href="links.php">Links</a> </li>
                
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="reg.php">Alumni</a></li>
+                
+      
                  <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-         <li><a href="grievance-cell.php">Grievance Redressal</a> </li>
-           <li><a href="#">Students Union</a> </li>
+         <li class="dropdown-menu-li"><a href="grievance-cell.php">Grievance Redressal</a> </li>
+           <li class="dropdown-menu-li"><a href="#">Students Union</a> </li>
         </ul>
       </li>
       
@@ -112,3 +115,4 @@
    
   </div>
 </nav>
+

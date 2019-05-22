@@ -107,46 +107,20 @@
         
     }
 		</style>
-		<section>
-			<div class="container">
-
-				<div class="grid-containe">
-					  <div id="che">
-					  	<img src="images/courses/computer.png" style="width: 50%;height: auto;">
-					  	<h5>Computer Hardware Engineering</h5>
-					  </div>
-					  <div>
-					  	<img src="images/courses/mech.png" style="width: 50%;height: auto;">
-					  	<h5>Mechanical Engineering</h5>
-					  </div>
-					  <div>
-					  	<img src="images/courses/civil.png" style="width: 50%;height: auto;">
-					  	<h5>Civil Engineering</h5>
-					  </div>
-					  <div>
-					  	<img src="images/courses/ec.png" style="width: 50%;height: auto;">
-					  	<h5>Electronics Engineering</h5>
-					  </div>
-					  <div>
-					  	<img src="images/courses/eee.png" style="width: 50%;height: auto;">
-					  	<h5>Electrical & Electronics Engineering</h5>
-					  </div>
-					  <div>
-					  	<img src="images/courses/it.png" style="width: 50%;height: auto;">
-					  	<h5>Instrumentation Engineering</h5>
-					  </div>
-					  
-					  
-				</div>
-				
-			</div>
-		</section>
+		
 		<section style="margin-bottom: 10px">
 			<div class="container">
 				<div class="row" style="padding: 0">
 					<div class="col-lg-4">
-						<h4 class="text-wh bg-danger" style="padding-left:10px;">News</h4>
+						<h4 class="text-wh bg-danger" style="padding-left:10px;padding-right: 10px;">News<span class="float-right"><i class="fa fa-newspaper-o"></i></span></h4>
 						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
+							<h5 style="border-bottom: 1px solid black">news heading</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<h5 style="border-bottom: 1px solid black">news heading</h5>
 							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -158,8 +132,17 @@
 
 					</div>
 					<div class="col-lg-4">
-						<h4 class="text-wh bg-danger" style="padding-left:10px;">Announcements</h4>
-						<div style="padding: 10px; border-bottom: 2px solid #17a2b8">
+						<h4 class="text-wh bg-danger" style="padding-left:10px;padding-right: 10px">Announcements<span class="float-right"><i class="fa fa-bullhorn"></i></span></h4>
+						<div style="padding: 10px; border-bottom: 2px solid  #dc3545">
+							<h5 style="border-bottom: 1px solid black">news heading</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							<h5 style="border-bottom: 1px solid black">news heading</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							<h5 style="border-bottom: 1px solid black">news heading</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 							<h5 style="border-bottom: 1px solid black">news heading</h5>
 							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -170,7 +153,7 @@
 
 					</div>
 					<div class="col-lg-4">
-						<h4 class="text-wh bg-danger" style="padding-left:10px;">Downloads</h4>
+						<h4 class="text-wh bg-danger" style="padding-left:10px;padding-right: 10px;">Downloads<span class="float-right"><i class="fa fa-download"></i></span></h4>
 						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
 							<div style="margin-bottom: 10px">
 								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
@@ -217,6 +200,41 @@
 						
 					</div>
 					
+				
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<h4 style="border-left: 2px solid red;padding-left: 10px;padding-right:10px" class="bg-light">Courses<span class="float-right"><i class="fa fa-graduation-cap"></i></span></h4>
+
+				<div class="grid-containe">
+					  <div id="che">
+					  	<img src="images/courses/computer.png" style="width: 50%;height: auto;">
+					  	<h5>Computer Hardware Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/mech.png" style="width: 50%;height: auto;">
+					  	<h5>Mechanical Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/civil.png" style="width: 50%;height: auto;">
+					  	<h5>Civil Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/ec.png" style="width: 50%;height: auto;">
+					  	<h5>Electronics Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/eee.png" style="width: 50%;height: auto;">
+					  	<h5>Electrical & Electronics Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/it.png" style="width: 50%;height: auto;">
+					  	<h5>Instrumentation Engineering</h5>
+					  </div>
+					  
+					  
+				</div>
 				
 			</div>
 		</section>
@@ -317,8 +335,25 @@
 		</section>
 		<section>
 			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h4 style="border-left: 2px solid red;padding-left: 10px;padding-right: 10px" class="bg-light">College History<span class="float-right"><i class="fa fa-bank"></i></span></h4>
+						<p class="text-bl" style="padding:50px;padding-top: 10px;text-align: justify;font-size: 14px">
+							Govt. Polytechnic College, Palakkad is situated in a vast 33 Acres of land adjacent to one of the largest Industrial Area of Kerala state. Palakkad district is considered to be one of the socially and economically backward districts of Kerala. The very existence of a Government college like ours plays an important role in the social development of the district.
+							Established in 1980, the College started under the respectful leadership of Sri. Ramachandra Pisharody, with two speciality- 3 year engineering Diploma courses in Foundry Technology and Power electronics.In the next year (1981) itself running beyond the time, a new 3 year diploma course in Instrument Technology started which was a milestone for this college. The course at that time was rarest among those in the whole world, and its fruits were very sweet too. Most of the alumni of Instrument Technology course could find their international career successfully.<br>In the year 1984, 3 year Diploma course in Civil Engineering started and also standardized the courses Foundry Technology into Mechanical Engineering and Power Electronics into Electronics Engineering.Advent of computer technology in industries, on par with training the younger generation in the year 1990, Computer Hardware & Maintenance 3 year diploma course was started in the college.But the absence of diploma course in one of the basic engineering discipline was a major defiiciency and we could overcome and fulfill this by starting Diploma course in Electrical and Electronics Engineering from the year 2014.The College also offers Part-time diploma courses in most of the disciplines for the working professionals of the nearby industries. The academic rating of our college is considered to be one of the best in the whole state.
+						</p>
+						
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
 				<div class="row" style="padding: 0">
 					<div class="col-lg-12">
+						<h4 style="border-left: 2px solid red;padding-left: 10px;padding-right: 10px" class="bg-light">Fecilities<span class="float-right"><i class="fa fa-anchor"></i></span></h4>
 								<div class="grid-containe">
 					  <div id="che">
 					  	<img src="images/fec/book.png" style="width: 40%;height: auto;">
@@ -364,7 +399,7 @@
 			</div>
 		</section>
 
-		<section class="w3ls-bnrbtm grey-bb " id="" style="padding: 0px;">
+	<!-- 	<section class="w3ls-bnrbtm grey-bb " id="" style="padding: 0px;">
 			<div class="container" style="padding: 0">
 				<div class="row" style="background-image: url(images/book.jpg);background-repeat: no-repeat;background-size: cover;margin: 0;padding:10px;">
 					<div class="col-lg-5 pr-xl-5 shadow grey-bb" style="border:2px solid black">
@@ -408,11 +443,11 @@
 					</div>
 				    </div>
 			</div>
-		<!-- </div></div> -->
-		</section>
+		</div></div>
+		</section> -->
 	    <!-- //vision-mission and principals message -->
 		<!--bottom grids -->
-		<section class="py-xl-3 py-lg-3" id="vision_and_mission">
+		<!-- <section class="py-xl-3 py-lg-3" id="vision_and_mission">
 			<div class="container">
 				<div class="row  text-center" style="margin: 0;padding: 0">
 					<div style="background: #ab9333" class="col-md-3 service-subgrids">
@@ -460,8 +495,8 @@
 						    	<li style="color: black">Women empowerment cell</li>
 						    	<li style="color: black">Staff development committee</li>
 						    	<li style="color: black">Student welfare committee</li>
-						    	<!-- <li style="color: black">Energy and environment committee</li>
-						    	<li style="color: black">Institution industry interaction celle</li> -->
+						    	<li style="color: black">Energy and environment committee</li>
+						    	<li style="color: black">Institution industry interaction celle</li>
 						    </ul>
 						</div>
 						<span class="fa fa-linode" style="color: black"></span>
@@ -517,7 +552,7 @@
 				</div>
 			
 			</div>
-		</section>
+		</section> -->
 		<!-- //bottom grids -->
 
 	
@@ -733,7 +768,7 @@ $search_keyword = '';
 		</section>
 		<!-- //slideshow small -->
 		<!-- college history -->
-		<section class="w3ls-bnrbtm" id="principal-2" style="background-image: url(images/30.jpg);background-repeat: no-repeat;background-size: cover;">
+		<!-- <section class="w3ls-bnrbtm" id="principal-2" style="background-image: url(images/30.jpg);background-repeat: no-repeat;background-size: cover;">
 			<div class="container py-xl-3 py-lg-3">
 				<div class="row" style="margin: 0">
 					<div class="col-lg-12 pl-xl-3 mt-lg-0 mt-4" style="background-color:rgba(220,220,220, 0.8);">
@@ -749,8 +784,8 @@ $search_keyword = '';
 					</div>
 				</div>
 			</div>
-		<!-- </div> -->
-		</section>
+		</div>
+		</section> -->
 		<!-- college history -->
 		<!-- contact -->
 		<section class="contact py-3" id="contact">

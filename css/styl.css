@@ -266,7 +266,7 @@ nav ul li {
 
 /* Styling the links */
 nav a {
-    margin: 0 12px;
+    margin: 0 0px;
     color: #000;
     font-size: 13px;
     letter-spacing: 2px;
@@ -284,16 +284,16 @@ nav a:hover {
  * and giving it a position of absolute */
 nav ul ul {
     display: none;
-    position: absolute;
+    position: relative;
     top: 25px;
-    background: #fff;
+    background: #003a6a;
     padding: 10px;
     -webkit-border-radius: 4px;
     -o-border-radius: 4px;
     -ms-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    z-index: 9;
+    z-index: 0;
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -303,8 +303,8 @@ nav ul li:hover>ul {
 }
 
 /* Fisrt Tier Dropdown */
-nav ul ul li {
-    width: 170px;
+nav ul ul li{
+    
     float: none;
     display: list-item;
     position: relative;
@@ -326,8 +326,9 @@ nav ul ul li a {
     font-size: 13px;
     letter-spacing: 1px;
     margin: 0;
-    margin: 10px;
+    /*margin: 10px;*/
 }
+
 
 /* Second, Third and more Tiers	
  * We move the 2nd and 3rd etc tier dropdowns to the left
@@ -335,12 +336,11 @@ nav ul ul li a {
 */
 nav ul ul ul li {
     position: relative;
-    top: -60px;
+    top: auto;
     /* has to be the same number as the "width" of "nav ul ul li" */
-    left: 170px;
+    left: 0px;
 }
-
-
+    
 /* Change ' +' in order to change the Dropdown symbol */
 li>a:only-child:after {
     content: '';

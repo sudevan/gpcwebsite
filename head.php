@@ -21,7 +21,7 @@
 	<!-- Bootstrap-Core-CSS -->
 	<link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
 	<!-- banner slider -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/styl.css" type="text/css" media="all">
 	<!-- Style-CSS -->
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
@@ -35,13 +35,21 @@
 	<link rel="stylesheet" type="text/css" href="style-custom.css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="css/bootnavbar.css">
+
+    <meta name="description" content="Multi level hover dropdown Navbar for bootstrap 4">
+    <meta name="keywords" content="Multi level hover dropdown Navbar for bootstrap 4">
 	<style type="text/css">
 		body{
     padding: 0px;
     margin: 0px;
 }
 	</style>
+	  <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 
 <body>
@@ -65,54 +73,111 @@
 
 
 </nav>
-<nav class="navbar navbar-dark navbar-expand-lg   navbar-light sticky-top" style="background:rgba(220,220,200);padding: 0px;border-bottom: 1px solid #2f4f4f">
+<nav class="navbar navbar-expand-lg navbar  light bg-light sticky-top mr-auto" style="background:rgba(220,220,220);padding: 0px;border-bottom: 1px solid #2f4f4f">
   
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
     <ul class="navbar-nav">
-   			    <li class=""><a href="index.php">Home</a></li>
-   			    <li class="dropdown">
-			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Placement
-			        <span class="caret"></span></a>
-			        <ul class="dropdown-menu">
-			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="https://docs.google.com/document/d/e/2PACX-1vSX7-fmQGlSm7pATn2sBhWh6ubw16uW2quQKzDg3x1EG7KZYy5FY8y2ZgzMFrhy8SY4QkgtMdBPFtXL/pub">Placement Brochure</a> </li>
-			         
-			        </ul>
-      			</li>
-                <li><a href="photos.php">Gallery</a></li>
-                <li><a href="events.php">Events</a></li>
-				       
-				<li><a href="activities.php">Activities</a> </li>
-				<li class="dropdown">
-			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
-			        <span class="caret"></span></a>
-			        <ul class="dropdown-menu">
-			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="mech.php">MechanicalEngineering</a> </li>
-			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="civil.php">Civil Engineering</a> </li>
-			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="eee.php">Electrical nad Electronics Engineering</a></li>
-			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="chm.php">Computer Harwdare Engineering</a></li>
-			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="electronics.php">Electronics Engineering</a></li>
-			         <li class="dropdown-menu-li"><a class="nomargin nopadding" href="it.php">Instrumentation Technology</a></li>
-			        </ul>
-      			</li>
-                
-<!--                 <li><a href="albums.php">Gallery</a></li>
- -->                <li><a href="links.php">Links</a> </li>
-               
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="reg.php">Alumni</a></li>
-                
-      
-                 <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-         <li class="dropdown-menu-li"><a href="grievance-cell.php">Grievance Redressal</a> </li>
-           <li class="dropdown-menu-li"><a href="#">Students Union</a> </li>
-        </ul>
-      </li>
-      
-    </ul>
-   
-  </div>
-</nav>
+    	        <!-- home -->
+   			    <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+   			    <!-- about us -->
+   			    <li class="nav-item dropdown">
+   			      <a href="#" class="nav-link dropdown-toggle" id="aboutus"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
+   			      <ul class="dropdown-menu" aria-labelledby="aboutus">
+   			      	<li><a href="#" class="dropdown-item">Governing Body</a></li>
+   			      	<li><a href="#" class="dropdown-item">College Counsil</a></li>
+   			      	<li><a href="#" class="dropdown-item">Academic counsil</a></li>
+   			      	<li><a href="#" class="dropdown-item">Students Counsil</a></li>
+   			      	<li><a href="#" class="dropdown-item">Ethics Commity</a></li>
+   			      	<li><a href="#" class="dropdown-item">P T A</a></li>
+   			      	<li><a href="#" class="dropdown-item">College Advisory Board</a></li>
+   			      </ul>
+   			    </li>
+   			    <!-- academics -->
+                <li class="nav-item dropdown">
+   			      <a href="#" class="nav-link dropdown-toggle" id="academics"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academics</a>
+   			      <ul class="dropdown-menu" aria-labelledby="academics">
+   			      	<li class="nav-item dropdown">
+   			      		<a href="#" class="dropdown-item dropdown-toggle" id="dept"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
+   			      		<ul id="dept" class="dropdown-menu">
+   			      			<li><a href="#" class="dropdown-item">Mechanical Engineering</a></li>
+   			      			<li><a href="#" class="dropdown-item">Civil Engineering</a></li>
+   			      			<li><a href="#" class="dropdown-item">Electrical And Electronics Engineering</a></li>
+   			      			<li><a href="#" class="dropdown-item">Electrical Engineering</a></li>
+   			      			<li><a href="#" class="dropdown-item">Computer hardware Engineering</a></li>
+   			      			<li><a href="#" class="dropdown-item">Instrumentation Engineering</a></li>
+   			      			
+   			      		</ul>
+   			      	</li>
+
+   			      	<li><a href="#" class="dropdown-item">placement</a></li>
+   			      	<li><a href="#" class="dropdown-item">Academic calender</a></li>
+   			      	<li><a href="#" class="dropdown-item">college calender</a></li>
+   			      	<li><a href="#" class="dropdown-item">Lirary</a></li>
+   			      	
+   			      </ul>
+   			    </li>
+   			    <!-- Admissions -->
+                  <li class="nav-item dropdown">
+                  	<a href="#" class="nav-link dropdown-toggle" id="admissions" role="button" data-toggle="dropdown" aria-haspop="true" aria-expanded="false">Admissions</a>
+                     <ul class="dropdown-menu" aria-labelledby="admissions">
+                     	<li><a class="dropdown-item" href="#">Apply for admission</a></li>
+                     	<li><a class="dropdown-item" href="#">Prospectus</a></li>
+                     	
+                     </ul>
+                  </li>
+   			    <!-- exams -->
+   			    <li class="nav-item"><a class="nav-link" href="#">exams</a></li>
+   			    <!-- industry -->
+   			    <li class="nav-item dropdown">
+   			    	<a href="#" class="nav-link dropdown-toggle" id="industry" role="button" data-toggle="dropdown" aria-haspop="true" aria-expanded="false">Industry</a>
+   			    	<ul class="dropdown-menu" aria-labelledby="industry">
+   			    		<li><a class="dropdown-item" href="#">IIIC</a></li>
+   			    		<li><a class="dropdown-item" href="#">MOUs</a></li>
+   			    		<li><a class="dropdown-item" href="#">Industrial visit</a></li>
+   			    		
+   			    	</ul>
+
+   			    </li>
+   			    <!-- activities -->
+   			    <li class="nav-item dropdown">
+   			    	<a href="#" class="nav-link dropdown-toggle" id="activities" role="button" data-toggle="dropdown" aria-haspop="true" aria-expanded="false">Activities</a>
+   			    	<ul class="dropdown-menu" aria-labelledby="activities">
+   			    		<li><a class="dropdown-item" href="#">NSS</a></li>
+   			    		<li><a class="dropdown-item" href="#">NCC</a></li>
+   			    		<li><a class="dropdown-item" href="#">I E D C</a></li>
+   			    		<li><a class="dropdown-item" href="#">Boomithra Sena</a></li>
+   			    		<li><a class="dropdown-item" href="#">P T A</a></li>
+   			    		
+   			    	</ul>
+
+   			    </li>
+   			    <!-- iedc -->
+   			    <li class="nav-item"><a class="nav-link" href="#">IEDC</a></li>
+   			    <!-- organizations -->
+   			    <li class="nav-item dropdown">
+   			    	<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" id="Organization" aria-haspopup="true" aria-expanded="false">Organization</a>
+   			    	<ul class="dropdown-menu" aria-labelledby="Organization">
+   			    		<li><a class="dropdown-item" href="#">Administration</a></li>
+   			    		<li><a class="dropdown-item" href="#">H O D</a></li>
+   			    		<li><a class="dropdown-item" href="#">Lecturers</a></li>
+   			    		<li><a class="dropdown-item" href="#">Lab Staffs</a></li>
+   			    		<li><a class="dropdown-item" href="#">Apprenties</a></li>
+   			    	</ul>
+   			    </li>
+   			    <!-- gallery -->
+   			    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+   			    <!-- more -->
+   			    <li class="nav-item dropdown">
+   			    	<a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="more" aria-haspopup="true" aria-expanded="false">More</a>
+   			    	<ul class="dropdown-menu" aria-labelledby="more">
+   			    		<li><a href="#" class="dropdown-item">Alumni</a></li>
+   			    		<li><a href="#" class="dropdown-item">More Links</a></li>
+   			    		<li><a href="#" class="dropdown-item">Grievance Redressal</a></li>
+   			    		
+   			    	</ul>
+   			    </li>
+   			</ul>
+   		</div>
+   	</nav>
+
 

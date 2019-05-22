@@ -5,43 +5,23 @@
         	include("head.php");
 		 ?>
 		<!-- carousel -->
-		<!-- <section class="col-md-12 col-sm-12 col-xs-12 py-lg-2 py-md-3" id="about"> -->
-			<!-- <div class="container"> -->
+		<section class="bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%;height: auto;">
 					<div class="carousel-inner" >
 						<div class="carousel-item active">
-							<img class="d-block w-100img-responsive" src="images/10.jpg" alt="First slide" style="width: 100%;height: auto;">
-							<div class="carousel-caption  d-md-block">
-								<h2 class="text-responsive">GOVT. POLYTECHNIC COLLEGE PALAKKAD</h2>
-							</div>
+							<img class="d-block w-100img-responsive" src="images/adblock/22.JPG" alt="First slide" style="width: 100%;height: auto;">
+							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/20.jpg" alt="Second slide" style="width: 100%;height: auto;">
-							<div class="carousel-caption" style="">
-								<h1 class="text-responsive">VISION</h1>
-								<p style="color: white;text-align: justify;text-decoration: none;" class="text-responsive">
-									To be a centre of excellence in engineering education for providing valuable resources to industries and society.
-								</p>
-							</div>
+							<img class="d-block w-100 img-responsive" src="images/adblock/20.jpg" alt="Second slide" style="width: 100%;height: auto;">
+							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/30.jpg" alt="Third slide" style="width: 100%;height: auto;">
-							<div class="carousel-caption d-md-block">
-								<h2 class="text-responsive">MISSION</h2>
-								<p>
-									<ol>
-										<li class="text-responsive-sm">
-											Providing quality education in engineering and technology
-										</li>
-										<li class="text-responsive-sm">
-											Involving in the development of society through technology transfer, entrepreneurship and industry interaction
-										</li>
-										<li class="text-responsive-sm">
-											To inculcate social responsibility and ethical values among students through value education
-										</li>
-									</ol>
-								</p>
-							</div>
+							<img class="d-block w-100 img-responsive" src="images/adblock/2.JPG" alt="Third slide" style="width: 100%;height: auto;">
+							
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -53,28 +33,340 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
-			<!-- </div> -->
-		<!-- </section> -->
+			</div>
+			
+				<div class="col-lg-6" style="border-radius: 10px;">
+						<div style="padding: 10px;text-align: justify;">
+							<h3 class="" style="color: black;border-bottom: 3px solid red">vision</h3>
+							<ol>
+								<li class="text-bl">
+									To be a centre of excellence in engineering education for providing valuable resources to industries and society.
+								</li>
+							</ol>
+						</div>
+						<div style="padding: 10px;text-align: justify;">
+								<h3 class="" style="color: black;border-bottom: 3px solid red">Mission</h3>
+							<ol style="line-height: 30px">
+							    <li class="text-bl">Providing quality education in engineering and technology</li>
+								<li  class="text-bl">Involving in the development of society through technology transfer, entrepreneurship and industry interaction</li>
+								<li class="text-bl"> To inculcate social responsibility and ethical values among students through value education</li>
+							</ol>
+							<style type="text/css">
+								h4
+								{
+									line-height: 40px; 	
+								}
+							</style>
+						</div>
+					</div>
+			</div>
+			</div>
+			</div>
+		</section>
 		<!-- carousel -->
     	<!-- vision-missioin and principal's message -->
-        <section class="" id="vision_and_mission" style="padding: 0">
+        <section class="bg-white">
 			<div class="container">
-				<div class="row  text-center" style="margin: 0;padding: 0">
-		    		<div class="col-lg-6 grey-bb" style="padding: 0">
+				<div class="row  text-center bg-white">
+		    		<div class="col-lg-6 " style="padding: 0">
 		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" href="https://goo.gl/forms/teDeKxfPVjcxf22D2" target="_blank">STUDENT REGISTRATION</a></marquee>
 		    		</div>
 		    		
-		    		<div class="col-lg-6 grey-bb" style="padding: 0">
+		    		<div class="col-lg-6" style="padding: 0">
 		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" 	href="https://forms.gle/NrHQrr9s26xKAVnHA" target="_blank">APPLY FOR TC</a></marquee>
 		    		</div>
     			</div>
     		</div>
    
 		</section>
+		<style type="text/css">
+			.grid-containe{
+					  display: grid;
+					  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+					  grid-gap: 20px;
+					  
+					  padding: 10px;
+			}
+.grid-containe > div{
+      
+      text-align: center;
+      padding: 10px;
+     transition: all 0.5s ease;
+
+    }
+    .grid-containe > div:hover{
+    	
+    	padding: 0;
+    	transform: scale(1);
+    }
+    #div:hover{
+         color: white;
+       
+         
+         background-color:#3575d3;
+        
+    }
+		</style>
+		<section>
+			<div class="container">
+
+				<div class="grid-containe">
+					  <div id="che">
+					  	<img src="images/courses/computer.png" style="width: 50%;height: auto;">
+					  	<h5>Computer Hardware Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/mech.png" style="width: 50%;height: auto;">
+					  	<h5>Mechanical Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/civil.png" style="width: 50%;height: auto;">
+					  	<h5>Civil Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/ec.png" style="width: 50%;height: auto;">
+					  	<h5>Electronics Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/eee.png" style="width: 50%;height: auto;">
+					  	<h5>Electrical & Electronics Engineering</h5>
+					  </div>
+					  <div>
+					  	<img src="images/courses/it.png" style="width: 50%;height: auto;">
+					  	<h5>Instrumentation Engineering</h5>
+					  </div>
+					  
+					  
+				</div>
+				
+			</div>
+		</section>
+		<section style="margin-bottom: 10px">
+			<div class="container">
+				<div class="row" style="padding: 0">
+					<div class="col-lg-4">
+						<h4 class="text-wh bg-danger" style="padding-left:10px;">News</h4>
+						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
+							<h5 style="border-bottom: 1px solid black">news heading</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+
+					</div>
+					<div class="col-lg-4">
+						<h4 class="text-wh bg-danger" style="padding-left:10px;">Announcements</h4>
+						<div style="padding: 10px; border-bottom: 2px solid #17a2b8">
+							<h5 style="border-bottom: 1px solid black">news heading</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							<h5 style="border-bottom: 1px solid black">news heading</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+						</div>
+
+					</div>
+					<div class="col-lg-4">
+						<h4 class="text-wh bg-danger" style="padding-left:10px;">Downloads</h4>
+						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
+									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-book" style="padding: 10px"></i></span>&nbsp;&nbsp;Prospectus
+								</a>
+							</div>
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
+									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-newspaper-o" style="padding: 10px"></i></span>&nbsp;&nbsp;Approvals
+								</a>
+							</div>
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
+									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-institution" style="padding: 10px"></i></span>&nbsp;&nbsp;NBA Accreditation
+								</a>
+							</div>
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
+									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-address-book aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Mandatory disclosures
+								</a>
+							</div>
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
+									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-building aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Balance Sheets
+								</a>
+							</div>
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
+									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-calendar-check-o aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;College Calendar
+								</a>
+							</div>
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
+									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-bank aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Profile
+								</a>
+							</div>
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
+									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-line-chart aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Annual Report
+								</a>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				
+			</div>
+		</section>
+		<style type="text/css">
+			.grid{
+				display: grid;
+				grid-gap: 10px;
+				grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+				padding: 10px;
+
+			}
+			.grid>div{
+				text-align: center;
+				padding: 20px;
+				font-size: 20px;
+				transition: transform .2s;
+
+				
+			}
+			/*.grid>div:hover{
+				transform: scale(1.1);
+				padding:  20px;
+				font-size: 20px;
+
+			}*/
+			.danger{
+				
+				background-color: #4bd7c8;
+				color:white;
+				
+			}
+			.danger:hover{
+				
+				
+				transform: scale(1.1);
+				padding:  20px;
+				font-size: 20px;
+			}
+			.success{
+                background-color: #fd919e;
+				color:white;
+			}
+			.success:hover{
+			
+				
+				transform: scale(1.1);
+				padding:  20px;
+				font-size: 20px;
+			}
+			.warning{
+				background-color: #ffa64d;
+				color: white;
+			}
+			.warning:hover{
+			
+				
+				transform: scale(1.1);
+				padding:  20px;
+				font-size: 20px;
+			}
+
+		</style>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="grid">
+							<div class="danger">Board of Governce</div>
+							<div class="success">College Advisory Committie</div>
+							<div class="warning">Organization chart</div>
+							<div class="success">Internal quality assurance cel</div>
+							<div class="danger">Grievance cell</div>
+							<div class="warning">Anti Ragging committee</div>
+							<div class="danger">Anti Ragging squad</div>
+							<div class="success">Internal compliance committee
+</div>
+							<div class="danger">Committee for SC/ST
+</div>
+							<div class="warning">Academic council
+</div>
+							<div class="danger">Examination monitoring cell
+</div>
+							<div class="success">Ethics committee
+</div>
+							<div class="warning">Women empowerment cell
+</div>
+							<div class="success">Staff development committee
+</div>
+
+							<div class="danger">Student welfare committee
+</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row" style="padding: 0">
+					<div class="col-lg-12">
+								<div class="grid-containe">
+					  <div id="che">
+					  	<img src="images/fec/book.png" style="width: 40%;height: auto;">
+					  	<h5>Library</h5>
+					  </div>
+					  <div>
+					  	<img src="images/fec/bus.svg" style="width: 40%;height: auto;">
+					  	<h5>College Bus</h5>
+					  </div>
+					  <div>
+					  	<img src="images/fec/cafe.png" style="width: 40%;height: auto;">
+					  	<h5>Canteen</h5>
+					  </div>
+					  <div>
+					  	<img src="images/fec/hostel.svg" style="width: 40%;height: auto;">
+					  	<h5>Hostel</h5>
+					  </div>
+					  <div>
+					  	<img src="images/fec/hc.png" style="width: 40%;height: auto;">
+					  	<h5>Health Club</h5>
+					  </div>
+					  <div>
+					  	<img src="images/fec/lc.svg" style="width: 40%;height: auto;">
+					  	<h5>Language Lab</h5>
+					  </div>
+					  <div>
+					  	<img src="images/fec/pc.svg" style="width: 40%;height: auto;">
+					  	<h5>Placement Cell</h5>
+					  </div>
+					  <div>
+					  	<img src="images/fec/bps.svg" style="width: 40%;height: auto;">
+					  	<h5>Backup Power Supply</h5>
+					  </div>
+					  
+					
+					</div>
+					
+				</div>
+					
+					
+				</div>
+				
+			</div>
+		</section>
 
 		<section class="w3ls-bnrbtm grey-bb " id="" style="padding: 0px;">
 			<div class="container" style="padding: 0">
-				<div class="row" style="background-image: url(images/book.jpg);background-repeat: no-repeat;background-size: cover;margin: 10px">
+				<div class="row" style="background-image: url(images/book.jpg);background-repeat: no-repeat;background-size: cover;margin: 0;padding:10px;">
 					<div class="col-lg-5 pr-xl-5 shadow grey-bb" style="border:2px solid black">
 						<div style="margin: 10px;padding: 0;text-align: justify;">
 							<center><h3 class="" style="line-height:50px;color: black">vision</h3></center>

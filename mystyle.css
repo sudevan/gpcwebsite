@@ -14,44 +14,41 @@
            }
 
         }
-		nav ul{
-			margin: 0px;
-			padding: 0px;
-		}
-		nav ul li {
-		
-			/*line-height: 50px;*/
-			
-		}
-		nav ul li a{
-			display: block;
-			padding: 10px;
-			padding-top:0;
-			line-height: 30px;
-			margin: 0;
-		}
-	nav ul li:hover{
-		border-bottom: 2px solid white;
-		border-top: 2px solid white;
-		/*border-left: 2px solid white;
-		border-right: 2px solid white;*/
-		background: #003a6a;
-		color: white;
+        nav ul{
+      margin: 0px;
+      padding: 0px;
+    }
+    nav ul li {
+    
+      line-height: 10px;
+      
+    }
+    nav ul li a{
+      display: block;
+      padding: 10px;
+      /*padding-top:0;*/
+      line-height: 30px;
+      margin: 0;
+    }
+  nav ul li:hover{
+    border-bottom: 2px solid #003a6a;
+    border-top: 2px solid white;
+    /*border-left: 2px solid white;*/
+    /*border-right: 2px solid white;*/
+    /*background: #003a6a;*/
+    color: #003a6a;
 
-	}
-	
-	nav ul li a:hover{
+  }
+  
+  nav ul li a:hover{
+    
+    color: #003a6a;
+  }
+  .head ol{
+    list-style: none;
+  }
 		
-		color: white;
-	}
-	.head ol{
-		list-style: none;
-	}
-	.color-white{
-		color: white;
-	}
-	.dropdown-menu-li{
-    min-width: 30vw;
+	
 }
 #vision_and_mission{
 	background-color:rgba(220,220,220, 0.3);
@@ -110,7 +107,7 @@
     .blue-bb{
     	background-color: #181e38;
     }
-    .grey-bb{
+    .grey-bb{		
     	background-color: #f5f5f5;
     }
     #principal-2{

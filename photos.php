@@ -1,5 +1,7 @@
 <?php 
    include("head.php");
+   include("connection.php");
+
  ?>
  <style type="text/css">
     body{
@@ -67,13 +69,28 @@
  	</div>
 
 </section> -->
-<!-- gallery -->
-    <div class="gallery " id="gallery">
+<!-- gallery --><form action="image.php" method="post" enctype="multipart/form-data">
+    browse the image<input type="file" name="file_image">
+    <input type="submit" name="upload" value="upload">
+</form>    <div class="gallery " id="gallery">
         <div class="container">
             <h3 class="text-bl text-center font-weight-bold mb-2">DIRECTOR</h3>
             <div class="row no-gutters">
+<?php
+                        $sql = "SELECT * FROM images order by id desc";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $path=$row['imgpath'];
+echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
+}}
+?>
+
                 <div class="col-md-4 gallery-grid1">
                     <a href="#gal1">
+
                         <img src="images/DTE/DTE1.jpeg" alt=" " class="img-fluid">
                     </a>
                 </div>

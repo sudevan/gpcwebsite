@@ -1,9 +1,93 @@
+<style type="text/css">
+            .link{
+                list-style: none;
+
+
+            }
+            .link>li>a:hover{
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  color: #dc3545;
+            }
+            .link2{
+                list-style: none;
+            }
+            .link2>li>a{
+                padding:10px;
+            }
+            .link2>li>a:hover{
+                color: #dc3545;
+            }
+            .padding10{
+              padding:10px
+        }
+        .display-block{
+            display: block;
+        }
+        .social-icon{
+            border:1px solid black;
+            padding: 10px;
+            margin: 5px
+        }
+        </style>
 <footer>
     <div class="row bg-light">
+        <div class="col-lg-4 px-lg-5">
+           <h5  class="px-3 py-2">Sign up  For Our Newsletter</h5>
+            <div class="input-group" >
+             <input  class="px-3 py-2" type="text" name="" placeholder="Enter E-mail Address" >
+                 <button class=" btn btn-danger px-3 py-2" style="border-radius: 0" ><span>GO</span></button>
+            </div>
+        </div>
+
+        <div class="col-lg-3 px-lg-4">
+            <h5  class="px-3 py-2">Navigation</h5>
+            <ul class="link">
+                <li ><a href="index.php" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-home" ></i></span>&nbsp;Home</a></li>
+
+                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-image"></i></span>&nbsp;Gallery</a></li>
+
+                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-bank"></i></span>&nbsp;Departments</a></li>
+
+                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-suitcase"></i></span>&nbsp;Placement</a></li>
+
+                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-ticket"></i></span>&nbsp;Admissions</a></li>
+
+                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-user"></i></span>&nbsp;Administration</a></li>
+            </ul>
+        </div>
         <div class="col-lg-4">
-           <ul>
-               <li><h5><a href="#">Home</a></h5></li>
-           </ul>
+            <ul class="link2">
+                <li ><a href="index.php" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-phone" ></i></span>&nbsp; 0491 257 2640</a></li>
+
+                <li><a href="mailto:palakkadpolytechnic@gmail.com" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-envelope"></i></span>&nbsp;palakkadpolytechnic@gmail.com</a></li>
+
+                <li><a href="" class="text-bl px-3 display-block"  ><span class="padding10"><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;Kodumbu(po), Palakkad</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="row" style="background-image: linear-gradient(#f8f9fa, white);">
+        <div class="col-lg-6 px-lg-5 py-lg-3">
+            <h6 class="text-bl">&copy; GPTC PALAKKAD - All Rights Reserved</h6>
+        </div>
+        <div class="col-lg-6 px-lg-5 py-lg-3">
+            <div class="float-right">
+                 <a href="#" class=" text-bl social-icon">
+                    <span><i class="fa fa-facebook"></i></span>
+                </a>
+                 <a href="#" class="text-bl social-icon">
+                    <span class="fa fa-google-plus"></span>
+                </a>
+                 <a href="#" class="text-bl social-icon">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a href="#" class="text-bl social-icon">
+                    <span class="fa fa-dribbble"></span>
+                </a>
+               
+            </div>
         </div>
         
     </div>

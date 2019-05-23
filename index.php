@@ -205,7 +205,7 @@
 		</section>
 		<section>
 			<div class="container">
-				<h5 style="border-left: 2px solid red;padding: 10px;" class="bg-light">Courses<span class="float-right"><i class="fa fa-graduation-cap"></i></span></h5>
+				<h5 class="bg-light heading">Courses<span class="float-right"><i class="fa fa-graduation-cap"></i></span></h5>
 
 				<div class="grid-containe">
 					  <div id="che">
@@ -301,7 +301,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h5 style="border-left: 2px solid red;padding: 10px;" class="bg-light">Mandatory Disclosures<span class="float-right"><i class="fa fa-graduation-cap"></i></span></h5>
+						<h5 class="bg-light heading">Mandatory Disclosures<span class="float-right"><i class="fa fa-graduation-cap"></i></span></h5>
 						<div class="grid">
 							<div class="danger">Board of Governce</div>
 							<div class="success">College Advisory Committie</div>
@@ -338,7 +338,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h5 style="border-left: 2px solid red;padding: 10px;" class="bg-light">College History<span class="float-right"><i class="fa fa-bank"></i></span></h5>
+						<h5 class="bg-light heading">College History<span class="float-right"><i class="fa fa-bank"></i></span></h5>
 						<p class="text-bl" style="padding:10px;padding-top: 10px;text-align: justify;font-size: 14px">
 							Govt. Polytechnic College, Palakkad is situated in a vast 33 Acres of land adjacent to one of the largest Industrial Area of Kerala state. Palakkad district is considered to be one of the socially and economically backward districts of Kerala. The very existence of a Government college like ours plays an important role in the social development of the district.
 							Established in 1980, the College started under the respectful leadership of Sri. Ramachandra Pisharody, with two speciality- 3 year engineering Diploma courses in Foundry Technology and Power electronics.In the next year (1981) itself running beyond the time, a new 3 year diploma course in Instrument Technology started which was a milestone for this college. The course at that time was rarest among those in the whole world, and its fruits were very sweet too. Most of the alumni of Instrument Technology course could find their international career successfully.<br>In the year 1984, 3 year Diploma course in Civil Engineering started and also standardized the courses Foundry Technology into Mechanical Engineering and Power Electronics into Electronics Engineering.Advent of computer technology in industries, on par with training the younger generation in the year 1990, Computer Hardware & Maintenance 3 year diploma course was started in the college.But the absence of diploma course in one of the basic engineering discipline was a major defiiciency and we could overcome and fulfill this by starting Diploma course in Electrical and Electronics Engineering from the year 2014.The College also offers Part-time diploma courses in most of the disciplines for the working professionals of the nearby industries. The academic rating of our college is considered to be one of the best in the whole state.
@@ -354,7 +354,7 @@
 			<div class="container">
 				<div class="row" style="padding: 0">
 					<div class="col-lg-12">
-						<h5 style="border-left: 2px solid red;padding: 10px;" class="bg-light">Fecilities<span class="float-right"><i class="fa fa-anchor"></i></span></h5>
+						<h5 class="bg-light heading">Fecilities<span class="float-right"><i class="fa fa-anchor"></i></span></h5>
 								<div class="grid-containe">
 					  <div id="che">
 					  	<img src="images/fec/book.png" style="width: 40%;height: auto;">
@@ -615,7 +615,7 @@ $search_keyword = '';
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4" style="margin-bottom: 10px">
-					<h5 style="border-left: 2px solid red;padding: 10px;" class="bg-light">Drive to us<span class="float-right"><i class="fa fa-car"></i></span></h5>
+					<h5 class="bg-light heading">Drive to us<span class="float-right"><i class="fa fa-car"></i></span></h5>
 
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.63369908756!2d76.69378!3d10.762688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8cce89f346b04ca5!2sGovernment+Polytechnic+College%2CPalakkad!5e0!3m2!1sen!2sin!4v1558529060466!5m2!1sen!2sin" width="auto" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
@@ -643,9 +643,21 @@ $search_keyword = '';
 						  background-color: white;
 						  border:2px solid #dc3545;
 						}
+						.external-links-a{
+									line-height: 30px;
+									background-color: #dc3545 ;
+									display:block;padding: 8px;
+									font-size: 15px
+								}
+								.external-links-span{
+									display: inline-block;font-size: 20px;border-radius: 50%;color:#dc3545
+								}
+								.heading{
+									border-left: 2px solid red;padding: 10px;
+								}
 					</style>
 					<div class="col-lg-4" style="margin-bottom: 10px">
-						<h5 style="border-left: 2px solid red;padding: 10px;" class="bg-light">Send us Message<span class="float-right"><i class="fa fa-envelope-o"></i></span></h5>
+						<h5 class="bg-light heading">Send us Message<span class="float-right"><i class="fa fa-envelope-o"></i></span></h5>
 						 <form action="#" method="post" style="margin-top: 20px;">
 								<div class="row" style="padding: 0">
 									<div class="col-sm-6 ">
@@ -671,25 +683,26 @@ $search_keyword = '';
 							</form>
 					</div>
 					<div class="col-lg-4" style="margin-bottom: 10px">
-						<h5 style="border-left: 2px solid red;padding: 10px;" class="bg-light">External Links<span class="float-right"><i class="fa fa-link"></i></span></h5>
+						<h5  class="bg-light heading">External Links<span class="float-right"><i class="fa fa-link"></i></span></h5>
 						<div style="margin-bottom: 10px;" >
-								<a  href="#" class=" text-wh"  style="line-height: 30px;background-color: #dc3545 ;display:block;padding: 8px;font-size: 15px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#dc3545"><i class="fa fa-edit aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Exam registration
+								<a  href="#" class=" text-wh external-links-a">
+									<span class="bg-white external-links-span"><i class="fa fa-edit padding10" aria-hidden='true'></i></span>&nbsp;&nbsp;Exam registration
 								</a>
 							</div>
 							<div style="margin-bottom: 10px;" >
-								<a  href="#" class=" text-wh"  style="line-height: 30px;background-color: #dc3545 ;display:block;padding: 8px;font-size: 15px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#dc3545"><i class="fa fa-book aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Syllabus and curriculum
+								<a  href="#" class=" text-wh external-links-a">
+									<span class="bg-white external-links-span"><i class="fa fa-book padding10" aria-hidden='true'></i></span>&nbsp;&nbsp;Syllabus and curriculum
 								</a>
 							</div>
 							<div style="margin-bottom: 10px;" >
-								<a  href="#" class=" text-wh"  style="line-height: 30px;background-color: #dc3545 ;display:block;padding: 8px;font-size: 15px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#dc3545"><i class="fa fa-check aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;AICTE Approval
+								<a  href="#" class=" text-wh external-links-a">
+									<span class="bg-white external-links-span"><i class="fa fa-check padding10" aria-hidden='true'></i></span>&nbsp;&nbsp;AICTE Approval
 								</a>
 							</div>
+							
 							<div style="margin-bottom: 10px;" >
-								<a  href="#" class=" text-wh"  style="line-height: 30px;background-color: #dc3545 ;display:block;padding: 8px;font-size: 15px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#dc3545"><i class="fa fa-tags aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;AICTE Schemes and Scholarships
+								<a  href="#" class=" text-wh external-links-a">
+									<span class="bg-white external-links-span" ><i class="fa fa-tags padding10" aria-hidden='true'></i></span>&nbsp;&nbsp;AICTE Schemes and Scholarships
 								</a>
 							</div>
 					</div>

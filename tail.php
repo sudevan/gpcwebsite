@@ -31,12 +31,12 @@
         }
         </style>
 <footer>
-    <div class="row bg-light">
+    <div class="row bg-light" style="margin: 0">
         <div class="col-lg-4 px-lg-5">
            <h5  class="px-3 py-2">Sign up  For Our Newsletter</h5>
             <div class="input-group" >
-             <input  class="px-3 py-2" type="text" name="" placeholder="Enter E-mail Address" >
-                 <button class=" btn btn-danger px-3 py-2" style="border-radius: 0" ><span>GO</span></button>
+             <input  class="px-lg-3 py-lg-2" type="text" name="" placeholder="Enter E-mail Address" >
+                 <button class=" btn btn-danger px-lg-3 py-lg-2" style="border-radius: 0" ><span>GO</span></button>
             </div>
         </div>
 
@@ -68,12 +68,12 @@
         
     </div>
 
-    <div class="row" style="background-image: linear-gradient(#f8f9fa, white);">
+    <div class="row" style="background-image: linear-gradient(#f8f9fa, white);margin: 0">
         <div class="col-lg-6 px-lg-5 py-lg-3">
             <h6 class="text-bl">&copy; GPTC PALAKKAD - All Rights Reserved</h6>
         </div>
         <div class="col-lg-6 px-lg-5 py-lg-3">
-            <div class="float-right">
+            <div class="float-lg-right">
                  <a href="#" class=" text-bl social-icon">
                     <span><i class="fa fa-facebook"></i></span>
                 </a>

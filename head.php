@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/bootnavbar.css">
 
     <meta name="description" content="Multi level hover dropdown Navbar for bootstrap 4">
@@ -60,9 +61,9 @@
           <img src="logo1.png" style="height:auto;"  alt="" style="border-color-bottom: 10px solid red" class="img-fluid">
         </a>
          <div class="ml-auto head">
-         	<ol>
-         		<li class="color-white"><i class="fa fa-phone"><a href=""></a></i>0491 257 2640</li>
-         		<li class="color-white"><i class="fa fa-envelope"></i> <a style="color: white;text-transform: lowercase;" href="mailto:palakkadpolytechnic@gmail.com">palakkadpolytechnic@gmail.com</a></li>
+         	<ol class="padding10">
+         		<li><a href="" class="text-wh"><i class="fa fa-phone"></i>0491 257 2640</a></li>
+         		<li><a class="text-wh" style="text-transform: lowercase;" href="mailto:palakkadpolytechnic@gmail.com"><i class="fa fa-envelope text-wh"></i> palakkadpolytechnic@gmail.com</a></li>
          	</ol>
          </div>
         
@@ -99,12 +100,12 @@
    			      	<li class="nav-item dropdown">
    			      		<a href="#" class="dropdown-item dropdown-toggle" id="dept"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
    			      		<ul id="dept" class="dropdown-menu">
-   			      			<li><a href="#" class="dropdown-item">Mechanical Engineering</a></li>
-   			      			<li><a href="#" class="dropdown-item">Civil Engineering</a></li>
-   			      			<li><a href="#" class="dropdown-item">Electrical And Electronics Engineering</a></li>
-   			      			<li><a href="#" class="dropdown-item">Electrical Engineering</a></li>
-   			      			<li><a href="#" class="dropdown-item">Computer hardware Engineering</a></li>
-   			      			<li><a href="#" class="dropdown-item">Instrumentation Engineering</a></li>
+   			      			<li><a href="mech.php" class="dropdown-item">Mechanical Engineering</a></li>
+   			      			<li><a href="civil.php" class="dropdown-item">Civil Engineering</a></li>
+   			      			<li><a href="eee.php" class="dropdown-item">Electrical And Electronics Engineering</a></li>
+   			      			<li><a href="electronics.php" class="dropdown-item">Electronics Engineering</a></li>
+   			      			<li><a href="chm.php" class="dropdown-item">Computer hardware Engineering</a></li>
+   			      			<li><a href="it.<?php  ?>" class="dropdown-item">Instrumentation Engineering</a></li>
    			      			
    			      		</ul>
    			      	</li>

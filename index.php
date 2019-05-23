@@ -9,18 +9,26 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%;height: 50vh">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000" style="width: 100%;height: 50vh">
 					<div class="carousel-inner" >
 						<div class="carousel-item active">
-							<img class="d-block w-100img-responsive" src="images/1.jpg" alt="First slide" style="width: 100%;height: 50vh">
+							<img class="d-block w-100img-responsive" src="images/slideshow/1.JPG" alt="First slide" style="width: 100%;height: 50vh">
 							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/3.jpg" alt="Second slide" style="width: 100%;height:50vh">
+							<img class="d-block w-100 img-responsive" src="images/slideshow/2.JPG" alt="Second slide" style="width: 100%;height:50vh">
 							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/2.jpg" alt="Third slide" style="width: 100%;height: 50vh">
+							<img class="d-block w-100 img-responsive" src="images/slideshow/3.JPG" alt="Third slide" style="width: 100%;height: 50vh">
+							
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100 img-responsive" src="images/slideshow/4.JPG" alt="Third slide" style="width: 100%;height: 50vh">
+							
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100 img-responsive" src="images/slideshow/5.JPG" alt="Third slide" style="width: 100%;height: 50vh">
 							
 						</div>
 					</div>
@@ -108,50 +116,64 @@
     }
 		</style>
 		
+     
+
+
+
+    <style type="text/css">
+
+    </style>
+    
 		<section style="margin-bottom: 10px">
 			<div class="container">
 				<div class="row" style="padding: 0">
-					<div class="col-lg-4">
+					
+					<div class="col-lg-4" style="">
 						<h5 class="text-wh bg-danger" style="padding:10px">News<span class="float-right"><i class="fa fa-newspaper-o"></i></span></h5>
-						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
-							<h5 style="border-bottom: 1px solid black">news heading</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<h5 style="border-bottom: 1px solid black">news heading</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+						<marquee direction="up" behaviour="alternate" style=" border-bottom: 2px solid #dc3545;" scrollamount="3">
+							<div style="padding: 10px;" >
+								<?php 	
+										include("connection.php");
+								         $query="SELECT * FROM news ";
+								         $result=$conn->query($query);
+								         if($result->num_rows>0){
+								         	while($row = $result->fetch_assoc()){
+								?>
+								<h5 style="border-bottom: 1px solid black"><?php echo $row['heading']; ?>(<?php echo $row['date']; ?>)</h5>
+								<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row['news']; ?>
+								<a href="<?php echo $row['link']?>" class="float-right">Open</a></p>
+								<?php 
+									}
+	      						   } 
+	      						?>
+								
+							</div>
+					   </marquee>
 
 					</div>
+
+					
 					<div class="col-lg-4">
 						<h5 class="text-wh bg-danger" style="padding:10px">Announcements<span class="float-right"><i class="fa fa-bullhorn"></i></span></h5>
-						<div style="padding: 10px; border-bottom: 2px solid  #dc3545">
-							<h5 style="border-bottom: 1px solid black">news heading</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-							<h5 style="border-bottom: 1px solid black">news heading</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-							<h5 style="border-bottom: 1px solid black">news heading</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-							<h5 style="border-bottom: 1px solid black">news heading</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-							<h5 style="border-bottom: 1px solid black">news heading</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+						<div style="padding: 10px;" >
+							<?php 
+                                $query2="SELECT * FROM announcement";
+                                $result2=$conn->query($query2);
+                                if($result2->num_rows>0){
+                                	while($row2=$result2->fetch_assoc()){
+                                		?>
+
+							<h5 style="border-bottom: 1px solid black"><?php echo $row2['heading'] ?>(<?php echo $row2['date'] ?>)</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row2['announcement'] ?>
+							<a href="<?php echo $row2['link']?>" class="float-right">Open</a></p>
+								
+                                <?php	}
+                                }
+							 ?>
 						</div>
 
 					</div>
+
 					<div class="col-lg-4">
 						<h5 class="text-wh bg-danger" style="padding:10px">Downloads<span class="float-right"><i class="fa fa-download"></i></span></h5>
 						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
@@ -403,164 +425,7 @@
 	
 
 	
-<!-- <?php 
-include("include.php");
 
-$search_keyword = '';
-	if(!empty($_POST['search']['keyword'])) {
-		$search_keyword = $_POST['search']['keyword'];
-	}
-	$sql = "SELECT `id`, DATE_FORMAT(date,'%d/%m/%Y') as date, `header`, `content`, `content1`, `image`, `link` FROM `news` order by id desc";
-	
-	/* Pagination Code starts */
-	$per_page_html = '';
-	$page = 1;
-	$start=0;
-	if(!empty($_POST["page"])) {
-		$page = $_POST["page"];
-		$start=($page-1) * 4;
-	}
-	$limit=" limit " . $start . "," . 4;
-	$pagination_statement = $conn->prepare($sql);
-	$pagination_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
-	$pagination_statement->execute();
-
-	$row_count = $pagination_statement->rowCount();
-	if(!empty($row_count)){
-		$per_page_html .= "<div style='text-align:center;margin:20px 0px;'>";
-		$page_count=ceil($row_count/3);
-        if($page_count>1) {
-            
-            for($i=1;$i<=$page_count;$i++){
-                
-                if($i==$page){
-                    
-                    
-                    $per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page current" />';
-                } else {
-                    $per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page" />';
-                }
-            }
-        }
-        $per_page_html .= "</div>";
-	}
-	
-	$query = $sql.$limit;
-	$pdo_statement = $conn->prepare($query);
-	$pdo_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
-	$pdo_statement->execute();
-	$result = $pdo_statement->fetchAll();
-?>
-
-
-    <section class="blog" >
-    	<div class="container py-xl-3 py-lg-3 py-md-3 py-sm-3" style="padding: 0">
-	         <div class="row col-lg-12" style="margin:0;padding:10px;background-image: url(images/cover.jpg);background-repeat: no-repeat;background-size: cover;">
-	         	<div class="col-lg-1"></div>
-	    			<div class="col-lg-4">
-	    				<h3 class="text-bl text-center font-weight-bold mb-2 widget-head" style="color: white">News</h3>
-	    				<form id="frm" action="" method="post">
-	                    <?php 
-								//~ $query="SELECT `id`, DATE_FORMAT(date,'%d/%m/%Y') as date, `header`, `content`, `image` FROM `sample`";
-								//~ $co=$conn->query($query);
-								//~ $co->setfetchmode(PDO::FETCH_ASSOC);
-								foreach($result as $ca){
-
-						?>
-	    		  		<div class="card-body">
-                            <h6 class="text-colors let-spa mb-3"><i class="fa fa-calendar-o"></i><?php echo $ca['date']; ?></h6>
-                            <h5 class="blog-title card-title font-weight-bold">
-                                <a href="<?php echo $ca['link'];?>" target="_blank"><?php echo $ca['header']; ?></a>
-                                <p class="text-bl"><?php echo $ca['content']; ?></p>
-                                <p class="text-bl"><strong><?php echo $ca['content1']; ?></strong></p>
-                            </h5>
-                            
-                        </div>
-                        <?php } ?>
-                        <?php echo $per_page_html; ?>
-						</form> 
-	    			</div>
-	    			<div class="col-lg-2"></div>
-						<?php 
-						include("include.php");
-
-						$search_keyword = '';
-							if(!empty($_POST['search']['keyword'])) {
-								$search_keyword = $_POST['search']['keyword'];
-							}
-							$sql = "SELECT `id`, DATE_FORMAT(date,'%d/%m/%Y') as date, `header`, `content`, `content1`,`image`,`link` FROM `events` order by id desc";
-							
-							/* Pagination Code starts */
-							$per_page_html = '';
-							$page = 1;
-							$start=0;
-							if(!empty($_POST["page"])) {
-								$page = $_POST["page"];
-								$start=($page-1) * 3;
-							}
-							$limit=" limit " . $start . "," . 3;
-							$pagination_statement = $conn->prepare($sql);
-							$pagination_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
-							$pagination_statement->execute();
-
-							$row_count = $pagination_statement->rowCount();
-							if(!empty($row_count)){
-								$per_page_html .= "<div style='text-align:center;margin:20px 0px;'>";
-								$page_count=ceil($row_count/3);
-								if($page_count>1) {
-									
-									for($i=1;$i<=$page_count;$i++){
-										
-										if($i==$page){
-											
-											
-											$per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page current" />';
-										} else {
-											$per_page_html .= '<input type="submit" name="page" value="' . $i . '" class="btn-page" />';
-										}
-									}
-								}
-								$per_page_html .= "</div>";
-							}
-							
-							$query = $sql.$limit;
-							$pdo_statement = $conn->prepare($query);
-							$pdo_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
-							$pdo_statement->execute();
-							$result = $pdo_statement->fetchAll();
-						?>
-	    			<div class="col-lg-4" >
-	    				<h3 class="text-bl text-center font-weight-bold mb-2 widget-head	" style="color: white">Events</h3>
-	    				<form id="frm" action="" method="post">
-			            <?php 
-								//~ $query="SELECT `id`, DATE_FORMAT(date,'%d/%m/%Y') as date, `header`, `content`, `image` FROM `sample`";
-								//~ $co=$conn->query($query);
-								//~ $co->setfetchmode(PDO::FETCH_ASSOC);
-								foreach($result as $ca){
-
-						?>
-						<div class="card-body">
-                            <h6 class="text-colors let-spa mb-3"><i class="fa fa-calendar-o"></i><?php echo $ca['date']; ?></h6>
-                            <h5 class="blog-title card-title font-weight-bold">
-                                <a href="<?php echo $ca['link'];?>" target="_blank"><?php echo $ca['header']; ?></a>
-                            </h5>
-                            <div class="row mt-5">
-                               <p class="text-bl"><?php echo $ca['content']; ?></p><br>
-                                <p class="text-bl"><strong><?php echo $ca['content1']; ?></strong></p>
-                               
-                            </div>
-                        </div>
-                         <?php } ?>
-                            
-
-           				 <?php echo $per_page_html; ?>
-
-                    	 </form>
-	    			</div>
-	    			
-	         </div>
-        </div>
-    </section> -->
 
 
 		<!-- slideshow small -->

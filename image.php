@@ -2,20 +2,55 @@
 include("head.php");
 
 include("connection.php");
-$target_dir = "images/";
+if(isset($_POST["upload"])) {
+	$target_dir = "";
 $album="";
+	$albumtype=$_POST['album'];
+	switch ($albumtype) {
+		case 'director':
+			$album="director";
+		$target_dir="images/DTE/";
+			break;
+		case 'JK':
+			$album="JK";
+			$target_dir="images/JK/";
+		case 'che':
+			$album="che";
+			$target_dir="images/che/";
+				break;
+		case 'adminblock':
+			$album="adminblock";
+			$target_dir="images/adblock/";
+			break;
+		case 'Alumni':
+			$album="Alumni";
+			$target_dir="images/Alumni/";
+			break;
+		case 'college':
+			$album="college";
+			$target_dir="images/college/";
+			break;
+		case 'newsletter':
+			$album="newsletter";
+			$target_dir="images/newsletter/";
+			break;
+		default:
+			$album="other";
+			$target_dir="images/";
+			break;
+	}
 $target_file = $target_dir . basename($_FILES["file_image"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
-if(isset($_POST["upload"])) {
+	
     $check = getimagesize($_FILES["file_image"]["tmp_name"]);
     if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
     } else {
 
-        echo"<script>alert('File is not an image');</script>";
+        echo"<script>alert('image is large or invalid image');</script>";
         echo "<script>window.location.href='photos.php'</script>";
         $uploadOk = 0;
     }
@@ -55,7 +90,7 @@ if ($uploadOk == 0) {
         echo "<script>alert('error uploading file');</script>";
          echo "<script>window.location.href='photos.php'</script>";
 }
-	 $sql="INSERT INTO images (name,imgpath,type,album) VALUES ('$filename','$target_file','$imageFileType','normal')";
+	 $sql="INSERT INTO images (name,imgpath,type,album) VALUES ('$filename','$target_file','$imageFileType','$album')";
 	 $result=mysqli_query($conn,$sql);
 	 if ($result) {
  		echo "uploaded successfully";

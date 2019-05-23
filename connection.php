@@ -1,8 +1,8 @@
 <?php
 
-	$servername 	= "gptcpalakkad.ac.in";
-	$username 	= "gpc_user";
-	$password 	= "1{IaTIGG0^c$";
+	$servername 	= "localhost";
+	$username 	= "root";
+	$password 	= "12345";
 	$database		= "gpcpalakkad";
 
 $conn = new mysqli($servername,$username,$password,$database);

@@ -165,7 +165,7 @@
    			    	</ul>
    			    </li>
    			    <!-- gallery -->
-   			    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+   			    <li class="nav-item"><a class="nav-link" href="photos.php">Gallery</a></li>
    			    <!-- more -->
    			    <li class="nav-item dropdown">
    			    	<a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="more" aria-haspopup="true" aria-expanded="false">More</a>

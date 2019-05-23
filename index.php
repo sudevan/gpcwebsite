@@ -12,15 +12,15 @@
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%;height: 50vh">
 					<div class="carousel-inner" >
 						<div class="carousel-item active">
-							<img class="d-block w-100img-responsive" src="images/adblock/22.JPG" alt="First slide" style="width: 100%;height: 50vh">
+							<img class="d-block w-100img-responsive" src="images/1.jpg" alt="First slide" style="width: 100%;height: 50vh">
 							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/adblock/20.jpg" alt="Second slide" style="width: 100%;height:50vh">
+							<img class="d-block w-100 img-responsive" src="images/3.jpg" alt="Second slide" style="width: 100%;height:50vh">
 							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/adblock/2.JPG" alt="Third slide" style="width: 100%;height: 50vh">
+							<img class="d-block w-100 img-responsive" src="images/2.jpg" alt="Third slide" style="width: 100%;height: 50vh">
 							
 						</div>
 					</div>

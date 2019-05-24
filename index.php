@@ -72,6 +72,8 @@
 			</div>
 		</section>
 		<!-- carousel -->
+		
+                            
     	<!-- vision-missioin and principal's message -->
         <section class="bg-white">
 			<div class="container">
@@ -124,14 +126,19 @@
 
     </style>
     
+    
+   
+   
+   
 		<section style="margin-bottom: 10px">
 			<div class="container">
 				<div class="row" style="padding: 0">
 					
-					<div class="col-lg-4" style="">
+					
+					<div class="col-lg-4" style="position: relative;">
 						<h5 class="text-wh bg-danger" style="padding:10px">News<span class="float-right"><i class="fa fa-newspaper-o"></i></span></h5>
-						<marquee direction="up" behaviour="alternate" style=" border-bottom: 2px solid #dc3545;" scrollamount="3">
-							<div style="padding: 10px;" >
+						<!-- <marquee direction="up" behaviour="alternate" style=" border-bottom: 2px solid #dc3545;" scrollamount="3"> -->
+							<div style="padding: 10px; ">
 								<?php 	
 										include("connection.php");
 								         $query="SELECT * FROM news ";
@@ -148,7 +155,7 @@
 	      						?>
 								
 							</div>
-					   </marquee>
+					   <!-- </marquee> -->
 
 					</div>
 
@@ -173,48 +180,63 @@
 						</div>
 
 					</div>
-
+                        <style type="text/css">
+                        	.down-item-a{
+                                        line-height: 20px;border-left: 2px solid #3575d3 ;display:block;padding:3px;font-size: 18px;
+                        	}
+                        	.down-item-a > span > i{
+                                    padding: 8px;
+                        	}
+                        	.down-item-a > span {
+                        		display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3;
+                        	}
+                        </style>
 					<div class="col-lg-4">
 						<h5 class="text-wh bg-danger" style="padding:10px">Downloads<span class="float-right"><i class="fa fa-download"></i></span></h5>
 						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-book" style="padding: 10px"></i></span>&nbsp;&nbsp;Prospectus
+								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white" style=""><i class="fa fa-newspaper-o" ></i></span>&nbsp;&nbsp;Previous Question Papers
 								</a>
 							</div>
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-newspaper-o" style="padding: 10px"></i></span>&nbsp;&nbsp;Approvals
+								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white" style=""><i class="fa fa-book" ></i></span>&nbsp;&nbsp;Prospectus
 								</a>
 							</div>
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-institution" style="padding: 10px"></i></span>&nbsp;&nbsp;NBA Accreditation
+                                <a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white" ><i class="fa fa-newspaper-o" ></i></span>&nbsp;&nbsp;Approvals
 								</a>
 							</div>
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-address-book aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Mandatory disclosures
+								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white" ><i class="fa fa-institution" ></i></span>&nbsp;&nbsp;NBA Accreditation
 								</a>
 							</div>
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-building aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Balance Sheets
+								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white"><i class="fa fa-address-book aria-hidden='true'"></i></span>&nbsp;&nbsp;Mandatory disclosures
 								</a>
 							</div>
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-calendar-check-o aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;College Calendar
+								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white" ><i class="fa fa-building aria-hidden='true'" ></i></span>&nbsp;&nbsp;Balance Sheets
 								</a>
 							</div>
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-bank aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Profile
+								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white" ><i class="fa fa-calendar-check-o aria-hidden='true'" ></i></span>&nbsp;&nbsp;College Calendar
 								</a>
 							</div>
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl" id="div" style="line-height: 30px;border-left: 2px solid #3575d3 ;display:block;padding: 8px;font-size: 20px">
-									<span class="bg-white" style="display: inline-block;font-size: 20px;border-radius: 50%;color:#3575d3"><i class="fa fa-line-chart aria-hidden='true'" style="padding: 10px"></i></span>&nbsp;&nbsp;Annual Report
+								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white" ><i class="fa fa-bank aria-hidden='true'" ></i></span>&nbsp;&nbsp;Profile
+								</a>
+							</div>
+							<div style="margin-bottom: 10px">
+								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+									<span class="bg-white" ><i class="fa fa-line-chart aria-hidden='true'" ></i></span>&nbsp;&nbsp;Annual Report
 								</a>
 							</div>
 							
@@ -227,34 +249,41 @@
 		</section>
 		<section>
 			<div class="container">
-				<h5 class="bg-light heading">Courses<span class="float-right"><i class="fa fa-graduation-cap"></i></span></h5>
+				<h5 class="bg-light heading">Programs<span class="float-right"><i class="fa fa-graduation-cap"></i></span></h5>
 
 				<div class="grid-containe">
 					  <div id="che">
-					  	<img src="images/courses/computer.png" style="width: 50%;height: auto;">
+					  	<img src="images/courses/computer.png" style="width: 30%;height: auto;">
 					  	<h5>Computer Hardware Engineering</h5>
 					  </div>
 					  <div>
-					  	<img src="images/courses/mech.png" style="width: 50%;height: auto;">
+					  	<img src="images/courses/mech.png" style="width: 30%;height: auto;">
 					  	<h5>Mechanical Engineering</h5>
 					  </div>
 					  <div>
-					  	<img src="images/courses/civil.png" style="width: 50%;height: auto;">
+					  	<img src="images/courses/civil.png" style="width: 30%;height: auto;">
 					  	<h5>Civil Engineering</h5>
 					  </div>
 					  <div>
-					  	<img src="images/courses/ec.png" style="width: 50%;height: auto;">
+					  	<img src="images/courses/ec.png" style="width: 30%;height: auto;">
 					  	<h5>Electronics Engineering</h5>
 					  </div>
 					  <div>
-					  	<img src="images/courses/eee.png" style="width: 50%;height: auto;">
+					  	<img src="images/courses/eee.png" style="width: 30%;height: auto;">
 					  	<h5>Electrical & Electronics Engineering</h5>
 					  </div>
 					  <div>
-					  	<img src="images/courses/it.png" style="width: 50%;height: auto;">
+					  	<img src="images/courses/it.png" style="width: 30%;height: auto;">
 					  	<h5>Instrumentation Engineering</h5>
 					  </div>
-					  
+					  <div>
+					  	<img src="images/courses/mech.png" style="width: 30%;height: auto;">
+					  	<h5>Mechanical Engineering (Evening)</h5>
+					  </div>
+					   <div>
+					  	<img src="images/courses/civil.png" style="width: 30%;height: auto;">
+					  	<h5>Civil Engineering(Evening)</h5>
+					  </div>
 					  
 				</div>
 				
@@ -428,54 +457,7 @@
 
 
 
-		<!-- slideshow small -->
-		<section id="vision_and_mission">
-			<div class="container">
-				<div class="row">
-					<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
-						<div class="MultiCarousel-inner">
-							<div class="item">
-								<div class="col-md-12">
-									<img src="images/4.jpg" alt=" " class="img-fluid">
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-md-12">
-									<img src="images/5.jpg" alt=" " class="img-fluid">
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-md-12">
-									<img src="images/6.jpg" alt=" " class="img-fluid">
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-md-12">
-									<img src="images/7.jpg" alt=" " class="img-fluid">
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-md-12">
-									<img src="images/8.jpg" alt=" " class="img-fluid">
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-md-12">
-									<img src="images/his.jpg" alt=" " class="img-fluid">
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-md-12">
-									<img src="images/4.jpg" alt=" " class="img-fluid" onclick="">
-								</div>
-							</div>
-						</div>
-						<button class="btn btn-primary leftLst"><</button>
-						<button class="btn btn-primary rightLst">></button>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 		<section>
 			<div class="container">
 				<div class="row">

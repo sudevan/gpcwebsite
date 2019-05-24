@@ -45,15 +45,15 @@
             <ul class="link">
                 <li ><a href="index.php" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-home" ></i></span>&nbsp;Home</a></li>
 
-                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-image"></i></span>&nbsp;Gallery</a></li>
+                <li><a href="photos.php" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-image"></i></span>&nbsp;Gallery</a></li>
 
-                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-bank"></i></span>&nbsp;Departments</a></li>
+                <li><a href="comingsoon.php" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-bank"></i></span>&nbsp;Departments</a></li>
 
-                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-suitcase"></i></span>&nbsp;Placement</a></li>
+                <li><a href="comingsoon.php" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-suitcase"></i></span>&nbsp;Placement</a></li>
 
                 <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-ticket"></i></span>&nbsp;Admissions</a></li>
 
-                <li><a href="" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-user"></i></span>&nbsp;Administration</a></li>
+                <li><a href="comingsoon.php" class="text-bl px-3 display-block"><span class="padding10"><i class="fa fa-user"></i></span>&nbsp;Administration</a></li>
             </ul>
         </div>
         <div class="col-lg-4">
@@ -218,7 +218,7 @@
 
 });</script>
    
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->

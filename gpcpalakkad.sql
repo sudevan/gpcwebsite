@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 23, 2019 at 10:38 AM
+-- Generation Time: May 24, 2019 at 02:37 PM
 -- Server version: 5.7.26-0ubuntu0.18.04.1
 -- PHP Version: 7.2.17-0ubuntu0.18.04.1
 
@@ -39,7 +39,8 @@ CREATE TABLE `adminlogin` (
 
 INSERT INTO `adminlogin` (`id`, `username`, `password`, `isactive`) VALUES
 (1, 'tcadmin', '287909c2874f94be8342ff9e3a20c439aed95f2f', 1),
-(2, 'webmaster', 'a92692147eb37d76a32412d5d30b1c4d6b0a0310', 1);
+(2, 'webmaster', 'a92692147eb37d76a32412d5d30b1c4d6b0a0310', 1),
+(3, 'webadmin', 'system1', 1);
 
 -- --------------------------------------------------------
 
@@ -484,20 +485,12 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `name`, `imgpath`, `type`, `album`) VALUES
-(2, 'DTE2.jpeg', 'images/DTE/DTE2.jpeg', 'jpeg', 'director'),
-(3, 'DTE1.jpeg', 'images/DTE/DTE1.jpeg', 'jpeg', 'director'),
-(4, 'DTE5.jpeg', 'images/DTE/DTE5.jpeg', 'jpeg', 'director'),
-(5, 'DTE4.jpeg', 'images/DTE/DTE4.jpeg', 'jpeg', 'director'),
-(6, 'DTE3.jpeg', 'images/DTE/DTE3.jpeg', 'jpeg', 'director'),
-(7, 'JK1.jpg', 'images/JK/JK1.jpg', 'jpg', 'JK'),
-(8, 'JK2.jpg', 'images/JK/JK2.jpg', 'jpg', 'JK'),
-(9, 'JK3.jpg', 'images/JK/JK3.jpg', 'jpg', 'JK'),
-(10, 'JK4.jpg', 'images/JK/JK4.jpg', 'jpg', 'JK'),
-(11, '1.jpg', 'images/che/1.jpg', 'jpg', 'che'),
-(12, '1.JPG', 'images/adblock/1.JPG', 'jpg', 'adminblock'),
-(13, '5.jpg', 'images/Alumni/5.jpg', 'jpg', 'Alumni'),
-(14, '28.jpg', 'images/college/28.jpg', 'jpg', 'college'),
-(15, '2.jpg', 'images/newsletter/2.jpg', 'jpg', 'newsletter');
+(22, 'elearning.png', 'images/DTE/elearning.png', 'png', 'director'),
+(23, 'baim-hanif-89800-unsplash.jpg', 'images/DTE/baim-hanif-89800-unsplash.jpg', 'jpg', 'director'),
+(24, '', 'images/che/civil.png', 'png', 'che'),
+(25, '', 'images/che/dumbbell.png', 'png', 'che'),
+(26, '', 'images/che/6.JPG', 'jpg', 'che'),
+(27, '3.JPG', 'images/Alumni/3.JPG', 'jpg', 'Alumni');
 
 -- --------------------------------------------------------
 
@@ -529,27 +522,23 @@ INSERT INTO `master_branch` (`id`, `branch`) VALUES
 --
 
 CREATE TABLE `news` (
-  `id` int(11) NOT NULL,
+  `id` int(100) NOT NULL,
   `date` date NOT NULL,
-  `header` varchar(255) NOT NULL,
-  `content` text NOT NULL,
-  `content1` text NOT NULL,
-  `image` varchar(50) NOT NULL,
-  `thumbnail` varchar(50) NOT NULL,
-  `link` varchar(255) NOT NULL
+  `heading` text NOT NULL,
+  `news` text NOT NULL,
+  `link` varchar(70) NOT NULL,
+  `isactive` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`id`, `date`, `header`, `content`, `content1`, `image`, `thumbnail`, `link`) VALUES
-(1, '2019-03-05', 'gygu', 'uhjkhnjjmjkkkkkkkkkkkkmlnkjlnllllllllllllllllllllllj', 'nmmmmmmmmmmmmmmmmmmmmmmlbihyyyvvvvvvvvvvvvvvvvvv', 'kjnkjn', 'kjhjhiuiu', 'ijnmjiumilk'),
-(2, '2019-03-21', 'iuyiuhyiuhyu', 'iuhyuttdtocdtduttco', 'tftcoutcutcoutv', 'kjhjhygygygoy', 'ygygyg', 'ygyggggu'),
-(3, '2019-03-23', 'yutyyf', 'fyufyugyugfyufgyu', 'yugfyugfyuffyufyuvgfy', 'uyugfyuffu', 'yftfftfufyu', 'yttfyugfyugyu'),
-(4, '2019-03-22', 'gfyuvghygyf', 'yufyufyugyug', 'fyugyugyug', 'utfyugyugu', 'gfyugyug', 'ugfyug'),
-(5, '2019-03-20', 'uihhiuj', 'iuhjiuhjijniu', 'hiukjiunhj', 'iuhnuinh', 'hiuhunhj', 'ihiu'),
-(6, '2019-03-27', 'liuhiuf', 'yfyufyufyu', 'uffyufyu', 'fffu', 'fyu', 'fyugfyu');
+INSERT INTO `news` (`id`, `date`, `heading`, `news`, `link`, `isactive`) VALUES
+(1, '2019-05-18', 'admission', 'asdfghjkl', 'local', 1),
+(2, '2019-05-25', 'admissionadsafssafdsa', 'how are you ', 'local', 1),
+(3, '2019-05-03', 'fazil', 'qwerty', 'local', 1),
+(4, '2019-05-17', 'fazil', 'qwerty', 'local', 1);
 
 -- --------------------------------------------------------
 
@@ -28613,7 +28602,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `adminlogin`
 --
 ALTER TABLE `adminlogin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `albums`
 --
@@ -28633,7 +28622,7 @@ ALTER TABLE `gallery`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `master_branch`
 --
@@ -28643,7 +28632,7 @@ ALTER TABLE `master_branch`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `rec_location_master`
 --

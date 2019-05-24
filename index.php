@@ -141,7 +141,7 @@
 							<div style="padding: 10px; ">
 								<?php 	
 										include("connection.php");
-								         $query="SELECT * FROM news ";
+								         $query="SELECT * FROM news order by date desc limit 5";
 								         $result=$conn->query($query);
 								         if($result->num_rows>0){
 								         	while($row = $result->fetch_assoc()){
@@ -155,28 +155,98 @@
 	      						?>
 								
 							</div>
-					   <!-- </marquee> -->
+
+					   </marquee>
+						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
+							<h5 style="border-bottom: 1px solid black">news heading</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">
+								<form name="newsform" id="newsform" method="post" action="announcement.php">
+  <table width="50%" border="0" cellspacing="0" cellpadding="0">
+
+    <tr>
+       <td>Enter the date</td>
+      <td><input name="date" type="date" id="date"></td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr> 
+      <td>Enter The Headline</td>
+      <td><input name="headline" type="text" id="headline"></td>
+    </tr>
+    <tr> 
+      <td>Enter The News Story</td>
+      <td><textarea name="story" id="story"></textarea></td>
+    </tr>
+    <tr> 
+      <td>Enter The News link</td>
+      <td><input type="text" name="link" id="link"></td>
+    </tr>
+    <tr> 
+      <td colspan="2"><div align="center">
+          <input name="add" type="submit" id="add" value="addnews">
+        </div></td>
+    </tr>
+  </table>
+  </form>
+</p>
+						</div>
 
 					</div>
 
 					
 					<div class="col-lg-4">
 						<h5 class="text-wh bg-danger" style="padding:10px">Announcements<span class="float-right"><i class="fa fa-bullhorn"></i></span></h5>
-						<div style="padding: 10px;" >
+						<div style="padding: 10px; border-bottom:2px solid #dc3545 ;" >
 							<?php 
-                                $query2="SELECT * FROM announcement";
+                                $query2="SELECT * FROM announcement order by fromdate limit 5";
                                 $result2=$conn->query($query2);
                                 if($result2->num_rows>0){
                                 	while($row2=$result2->fetch_assoc()){
                                 		?>
 
-							<h5 style="border-bottom: 1px solid black"><?php echo $row2['heading'] ?>(<?php echo $row2['date'] ?>)</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row2['announcement'] ?>
+							<h5 style="border-bottom: 1px solid black"><?php echo $row2['headline'] ?>( <?php echo $row2['fromdate'] ?> - <?php echo $row2['todate']; ?> )</h5>
+							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row2['content'] ?>
 							<a href="<?php echo $row2['link']?>" class="float-right">Open</a></p>
 								
                                 <?php	}
                                 }
 							 ?>
+	<form name="announcement" id="newsform" method="post" action="announcement.php">
+  <table width="50%" border="0" cellspacing="0" cellpadding="0">
+
+    <tr>
+       <td>from date</td>
+      <td><input name="fromdate" type="date" id="fromdate"></td>
+    </tr>
+       <tr>
+       <td>from date</td>
+      <td><input name="todate" type="date" id="todate"></td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr> 
+      <td>Enter The Headline</td>
+      <td><input name="head" type="text" id="head"></td>
+    </tr>
+    <tr> 
+      <td>Enter The announcement</td>
+      <td><textarea name="announcement" id="announcement"></textarea></td>
+    </tr>
+    <tr> 
+      <td>Enter The link/td>
+      <td><input type="text" name="link" id="link"></td>
+    </tr>
+    <tr> 
+      <td colspan="2"><div align="center">
+          <input name="announce" type="submit" id="announce" value="announce">
+        </div></td>
+    </tr>
+  </table>
+  </form>
 						</div>
 
 					</div>

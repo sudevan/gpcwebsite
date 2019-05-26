@@ -1,4 +1,6 @@
-	
+	<?php 
+    session_start();
+   ?>
 	<head>
 	<title>GPTC PALAKKAD</title>
 	<!-- Meta tag Keywords -->
@@ -78,7 +80,9 @@ $(function() {
          		<li><a href="" class="text-wh"><i class="fa fa-phone"></i>0491 257 2640</a></li>
          		<li><a class="text-wh" style="text-transform: lowercase;" href="mailto:palakkadpolytechnic@gmail.com"><i class="fa fa-envelope text-wh"></i> palakkadpolytechnic@gmail.com</a></li>
          	</ol>
+
          </div>
+         <button class="btn btn-danger" style="padding: 3px;margin-right: 5px" onclick="window.location.href='log.php'" id="login" value="login">Login</button>
         
      
   <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -193,5 +197,8 @@ $(function() {
    			</ul>
    		</div>
    	</nav>
+
+   
+
 
 

@@ -14,6 +14,7 @@ $album="";
 		case 'JK':
 			$album="JK";
 			$target_dir="images/JK/";
+			break;
 		case 'che':
 			$album="che";
 			$target_dir="images/che/";

@@ -45,10 +45,22 @@
     //  else{
     //   alert("else");
     //  }
-    alert(this.responseText);
+    var flag= this.responseText;
+    alert(flag);
+  
+    // if (flag==="") {
+
+    // alert(flag);
+    // }
+    //   else{
+    //     alert("invalid");
+    //   }
+
     }
   };
-  xhttp.open("POST", "loginsample.php?username="+username+"&password="+password, true);
+  xhttp.open("GET", "loginsample.php?username="+username+"&password="+password, true);
+      xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
   xhttp.send();
 }
 	

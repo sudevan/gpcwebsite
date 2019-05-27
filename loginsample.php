@@ -4,15 +4,15 @@
 	
 
 
- $username=$_POST['username'];
- $password=$_POST['password'];
+ $username=$_GET['username'];
+ $password=$_GET['password'];
    $sql="SELECT * from adminlogin where username='$username' and password='$password'";
    $result=$conn->query($sql);
    if($result->num_rows > 0){
   
-    echo "1";
+    echo "login";
     	} else {
-   	 echo "0"
+   	 echo "$sql";
    	}
  
 ?>

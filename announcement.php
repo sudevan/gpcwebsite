@@ -17,7 +17,7 @@ if (isset($_POST['add'])) {
        $var=$_POST['date'];
        $date = str_replace('/', '-', $var );
        $newDate = date("Y-m-d", strtotime($date));
-       $sql="INSERT INTO news (date,heading,news,link) values('$newDate','$headline','$story','$link')";
+       $sql="INSERT INTO news (date,heading,news,link,isactive) values('$newDate','$headline','$story','$link','1')";
        $result = $conn->query($sql);
 
 if ($result) {

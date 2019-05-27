@@ -74,7 +74,7 @@
         </div>
         <div class="col-lg-6 px-lg-5 py-lg-3">
             <div class="float-lg-right">
-                 <a href="#" class=" text-bl social-icon">
+                 <a href="https://www.facebook.com/gptcpalakkad/" class=" text-bl social-icon">
                     <span><i class="fa fa-facebook"></i></span>
                 </a>
                  <a href="#" class="text-bl social-icon">

@@ -2,39 +2,40 @@
  include("head.php");
 
  ?>
-   <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-6 bg-info text-wh">
-        <!-- <form action="" style="margin-left: 5%; margin-right: 5%;" id="loginform" method="post"> -->
-  <div class="form-group">
-    <label for="email">Username:</label>
-    <input type="username" id="name" class="form-control" name="username">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="text" id="pw" class="form-control" name="password">
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-  <button type="button" name="login" class="btn btn-danger" onclick="loging()">login</button>
-<!-- </form> -->
 
-      </div>
-      
-    </div>
-    
-  </div>
-</section>
+            <div class="row">
+                <!-- Grid column --><div class="col-md-3"></div>
+                <div class="col-md-6 mb-4">
+                    <div class="card near-moon-gradient form-white">
+                        <div class="card-body" style="background-image: linear-gradient(to right,blue,grey);">
+                            <!-- Form subscription -->
+                            <section style="color: white; ">
+                                <h3 class="text-center indigo-text font-bold py-4"><strong>Login</strong></h3>
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix white-text"></i><label for="form35">username</label>
+                                    <input type="text" id="name" class="form-control">
+                                    
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix white-text"></i><label for="form25">password</label>
+                                    <input type="text" id="pwd" class="form-control">
+                                    
+                                </div>
+                                <div class="text-center py-4">
+                                    <button class="btn btn-indigo" onclick="loging()" style="color: white;">login<i class="fa fa-paper-plane-o ml-1"></i></button>
+                                </div>
+                            </section>
+                            <!-- Form subscription -->
+                        </div>
+                    </div>
+                </div>
 
 
 <script type="text/javascript">
 	function loging()
 	{
 		var name=document.getElementById('name').value;
-		var pw=document.getElementById('pw').value;
+		var pw=document.getElementById('pwd').value;
 		var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {

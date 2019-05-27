@@ -12,7 +12,7 @@
   
     echo "login";
     	} else {
-   	 echo "$sql";
+   	 echo "invalid username or password";
    	}
  
 ?>

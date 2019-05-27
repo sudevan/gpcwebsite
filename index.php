@@ -48,18 +48,18 @@
 				</div>
 			</div>
 			
-				<div class="col-lg-6" style="border-radius: 10px;">
+				<div class="col-lg-6" style="padding: 20px;border-radius: 10px;background-color:rgba(192,192,192,0.3);">
 						<div style="padding: 10px;text-align: justify;">
-							<h3 class="" style="color: black;border-bottom: 3px solid red">vision</h3>
+							<h4 class="" style="color: black;border-bottom: 3px solid red">VISION</h4>
 							<ol>
-								<li class="text-bl">
+								<li class="text-bl mytext" style="font-size: 14px">
 									To be a centre of excellence in engineering education for providing valuable resources to industries and society.
 								</li>
 							</ol>
 						</div>
 						<div style="padding: 10px;text-align: justify;">
-								<h3 class="" style="color: black;border-bottom: 3px solid red">Mission</h3>
-							<ol style="line-height: 30px">
+								<h4 class="" style="color: black;border-bottom: 3px solid red">MISSION</h4>
+							<ol style="line-height: 25px;font-size: 14px;" class="mytext">
 							    <li class="text-bl">Providing quality education in engineering and technology</li>
 								<li  class="text-bl">Involving in the development of society through technology transfer, entrepreneurship and industry interaction</li>
 								<li class="text-bl"> To inculcate social responsibility and ethical values among students through value education</li>
@@ -151,9 +151,11 @@
 								         if($result->num_rows>0){
 								         	while($row = $result->fetch_assoc()){
 								?>
-								<h5 style="border-bottom: 1px solid black"><?php echo $row['heading']; ?>(<?php echo $row['date']; ?>)</h5>
-								<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row['news']; ?>
-								<a href="<?php echo $row['link']?>" class="float-right">Open</a></p>
+								<div style="padding: 10px">
+								<h6 style="border-bottom: 1px solid black" class="mytext"><?php echo $row['heading']; ?>(<?php echo $row['date']; ?>)</h6>
+								<p class="text-bl mytext" style="font-size: 14px;line-height: normal;text-align: justify;margin-bottom: 0"><?php echo $row['news']; ?>
+								<a href="<?php echo $row['link']?>" class="float-right">Read more...</a></p>
+							</div>
 								<?php 
 									}
 	      						   } 
@@ -162,7 +164,7 @@
 							</div>
 
 					   </marquee>
-						<div style="padding: 10px; ">
+						<!-- <div style="padding: 10px; ">
 							<h5 style="border-bottom: 1px solid black">news heading</h5>
 							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">
 								<form name="newsform" id="newsform" method="post" action="announcement.php" class="adminform">
@@ -196,7 +198,7 @@
   </table>
   </form>
 </p>
-						</div>
+						</div> -->
 
 					</div>
 
@@ -214,47 +216,52 @@
 							<h5 style="border-bottom: 1px solid black"><?php echo $row2['headline'] ?>( <?php echo $row2['fromdate'] ?>  )</h5>
 							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row2['content'] ?>
 							<br><br>
+
+							<a href="<?php echo $row2['link']?>" class="float-right">Read more...</a></p>
+								<br><br>
+						</div>
+
 								
                                 <?php	}
                                 }
 							 ?>
-	<form name="announcement" id="newsform" method="post" action="announcement.php" class="adminform">
-  <table width="50%" border="0" cellspacing="0" cellpadding="0">
+											<!-- <form name="announcement" id="newsform" method="post" action="announcement.php" class="adminform">
+										  <table width="50%" border="0" cellspacing="0" cellpadding="0">
 
-    <tr>
-       <td>from date</td>
-      <td><input name="fromdate" type="date" id="fromdate"></td>
-    </tr>
-       <tr>
-       <td>from date</td>
-      <td><input name="todate" type="date" id="todate"></td>
-    </tr>
-    <tr> 
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr> 
-      <td>Enter The Headline</td>
-      <td><input name="head" type="text" id="head"></td>
-    </tr>
-    <tr> 
-      <td>Enter The announcement</td>
-      <td><textarea name="announcement" id="announcement"></textarea></td>
-    </tr>
-    <tr> 
-      <td>Enter The link/td>
-      <td><input type="text" name="link" id="link"></td>
-    </tr>
-    <tr> 
-      <td colspan="2"><div align="center">
-          <input name="announce" type="submit" id="announce" value="announce">
-        </div></td>
-    </tr>
-  </table>
-  </form>
-						</div>
+										    <tr>
+										       <td>from date</td>
+										      <td><input name="fromdate" type="date" id="fromdate"></td>
+										    </tr>
+										       <tr>
+										       <td>from date</td>
+										      <td><input name="todate" type="date" id="todate"></td>
+										    </tr>
+										    <tr> 
+										      <td>&nbsp;</td>
+										      <td>&nbsp;</td>
+										    </tr>
+										    <tr> 
+										      <td>Enter The Headline</td>
+										      <td><input name="head" type="text" id="head"></td>
+										    </tr>
+										    <tr> 
+										      <td>Enter The announcement</td>
+										      <td><textarea name="announcement" id="announcement"></textarea></td>
+										    </tr>
+										    <tr> 
+										      <td>Enter The link/td>
+										      <td><input type="text" name="link" id="link"></td>
+										    </tr>
+										    <tr> 
+										      <td colspan="2"><div align="center">
+										          <input name="announce" type="submit" id="announce" value="announce">
+										        </div></td>
+										    </tr>
+										  </table>
+										  </form> -->
+						<!-- </div> -->
 
-					</div>
+					<!-- </div> -->
                         <style type="text/css">
                         	.down-item-a{
                                         line-height: 20px;border-left: 2px solid #3575d3 ;display:block;padding:3px;font-size: 18px;
@@ -321,6 +328,7 @@
 					
 				
 			</div>
+		</div>
 		</section>
 		<section>
 			<div class="container">
@@ -429,29 +437,29 @@
 					<div class="col-lg-12">
 						<h5 class="bg-light heading">Mandatory Disclosures<span class="float-right"><i class="fa fa-graduation-cap"></i></span></h5>
 						<div class="grid">
-							<div class="danger">Board of Governce</div>
-							<div class="success">College Advisory Committie</div>
-							<div class="warning">Organization chart</div>
-							<div class="success">Internal quality assurance cel</div>
-							<div class="danger">Grievance cell</div>
-							<div class="warning">Anti Ragging committee</div>
-							<div class="danger">Anti Ragging squad</div>
-							<div class="success">Internal compliance committee
+							<div class="danger"><a href="pdf_files/g_body.pdf" target="_blank" class="text-wh">Board of Governce</a></div>
+							<div class="success"><a href="pdf_files/c_a_board.pdf" class="text-wh" target="_blank">College Advisory Committie</a></div>
+							<div class="warning"><a href="pdf_files/i_hire.pdf" class="text-wh" target="_blank">Organization chart</a></div>
+							<div class="success"><a href="pdf_files/i_qual.pdf" class="text-wh" target="_blank">Internal quality assurance cell</a></div>
+							<div class="danger"><a href="pdf_files/g_cell.pdf" class="text-wh" target="_blank">Grievance cell</a></div>
+							<div class="warning"><a href="pdf_files/a_ragging_committi.pdf" target="_blank" class="text-wh">Anti Ragging committee</a></div>
+							<div class="danger"><a href="pdf_files/a_ragging_squad.pdf" target="_blank" class="text-wh">Anti Ragging squad</a></div>
+							<div class="success"><a href="pdf_files/in_com_commiti.pdf" target="_blank" class="text-wh">Internal compliance committee</a>
 </div>
-							<div class="danger">Committee for SC/ST
+							<div class="danger"><a href="pdf_files/se_st_com.pdf" target="_blank" class="text-wh">Committee for SC/ST</a>
 </div>
-							<div class="warning">Academic council
+							<div class="warning"> <a href="pdf_files/g_body.pdf" target="_blank" class="text-wh">Academic council</a>
 </div>
-							<div class="danger">Examination monitoring cell
+							<div class="danger">  <a href="pdf_files/exam_m_cell.pdf" target="_blank" class="text-wh">Examination monitoring cell</a>
 </div>
-							<div class="success">Ethics committee
+							<div class="success"><a href="pdf_files/committi.pdf" target="_blank" class="text-wh">Ethics committee</a>
 </div>
-							<div class="warning">Women empowerment cell
+							<div class="warning"><a href="pdf_files/women_d_cell.pdf" target="_blank" class="text-wh">Women empowerment cell</a>
 </div>
-							<div class="success">Staff development committee
+							<div class="success"><a href="pdf_files/staff.pdf" target="_blank" class="text-wh">Staff development committee</a>
 </div>
 
-							<div class="danger">Student welfare committee
+							<div class="danger"><a href="pdf_files/committi.pdf" target="_blank" class="text-wh">Student welfare committee</a>
 </div>
 							
 						</div>

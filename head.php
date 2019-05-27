@@ -66,6 +66,11 @@ $(function() {
   });
 });
 </script>
+<style type="text/css">
+  .mytext{
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        }
+</style>
 </head>
 
 <body>
@@ -101,13 +106,13 @@ $(function() {
    			    <li class="nav-item dropdown">
    			      <a href="#" class="nav-link dropdown-toggle" id="aboutus"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
    			      <ul class="dropdown-menu" aria-labelledby="aboutus">
-   			      	<li><a href="#" class="dropdown-item">Governing Body</a></li>
-   			      	<li><a href="#" class="dropdown-item">College Counsil</a></li>
-   			      	<li><a href="#" class="dropdown-item">Academic counsil</a></li>
-   			      	<li><a href="#" class="dropdown-item">Students Counsil</a></li>
-   			      	<li><a href="#" class="dropdown-item">Ethics Commity</a></li>
-   			      	<li><a href="#" class="dropdown-item">P T A</a></li>
-   			      	<li><a href="#" class="dropdown-item">College Advisory Board</a></li>
+   			      	<li><a href="pdf_files/g_body.pdf" target="_blank" class="dropdown-item">Governing Body</a></li>
+   			      	<li><a href="pdf_files/g_body.pdf" target="_blank" class="dropdown-item">College Academic Counsil</a></li>
+<!--    			      	<li><a href="#" class="dropdown-item">Academic counsil</a></li>
+ -->   			      	<li><a href="pdf_files/committi.pdf" class="dropdown-item" target="_blank">Students Counsil</a></li>
+   			      	<li><a href="pdf_files/committi.pdf" class="dropdown-item" target="_blank">Ethics Commity</a></li>
+   			      	<li><a href="pdf_files/pta.pdf" class="dropdown-item" target="_blank">P T A</a></li>
+   			      	<li><a href="pdf_files/c_a_board.pdf" class="dropdown-item" target="_blank">College Advisory Board</a></li>
    			      </ul>
    			    </li>
    			    <!-- academics -->
@@ -127,7 +132,7 @@ $(function() {
    			      		</ul>
    			      	</li>
 
-   			      	<li><a href="#" class="dropdown-item">placement</a></li>
+   			      	<li><a href="https://docs.google.com/document/d/e/2PACX-1vSX7-fmQGlSm7pATn2sBhWh6ubw16uW2quQKzDg3x1EG7KZYy5FY8y2ZgzMFrhy8SY4QkgtMdBPFtXL/pub" class="dropdown-item" target="_blank">placement</a></li>
    			      	<li><a href="#" class="dropdown-item">Academic calender</a></li>
    			      	<li><a href="#" class="dropdown-item">college calender</a></li>
    			      	<li><a href="#" class="dropdown-item">Lirary</a></li>
@@ -138,20 +143,20 @@ $(function() {
                   <li class="nav-item dropdown">
                   	<a href="#" class="nav-link dropdown-toggle" id="admissions" role="button" data-toggle="dropdown" aria-haspop="true" aria-expanded="false">Admissions</a>
                      <ul class="dropdown-menu" aria-labelledby="admissions">
-                     	<li><a class="dropdown-item" href="#">Apply for admission</a></li>
-                     	<li><a class="dropdown-item" href="#">Prospectus</a></li>
+                     	<li><a class="dropdown-item" href="http://www.polyadmission.org/index.php?r=site%2Fhome" target="_blank">Apply for admission</a></li>
+                     	<li><a class="dropdown-item" href="http://www.polyadmission.org/files/prospectus-2018-en.pdf" target="_blank">Prospectus</a></li>
                      	
                      </ul>
                   </li>
    			    <!-- exams -->
-   			    <li class="nav-item"><a class="nav-link" href="#">exams</a></li>
+   			    <li class="nav-item"><a class="nav-link" href="https://tekerala.org/" target="_blank">exams</a></li>
    			    <!-- industry -->
    			    <li class="nav-item dropdown">
    			    	<a href="#" class="nav-link dropdown-toggle" id="industry" role="button" data-toggle="dropdown" aria-haspop="true" aria-expanded="false">Industry</a>
    			    	<ul class="dropdown-menu" aria-labelledby="industry">
-   			    		<li><a class="dropdown-item" href="#">IIIC</a></li>
-   			    		<li><a class="dropdown-item" href="#">MOUs</a></li>
-   			    		<li><a class="dropdown-item" href="#">Industrial visit</a></li>
+   			    		<li><a class="dropdown-item" href="comingsoon.php">IIIC</a></li>
+   			    		<li><a class="dropdown-item" href="comingsoon.php">MOUs</a></li>
+   			    		<li><a class="dropdown-item" href="comingsoon.php">Industrial visit</a></li>
    			    		
    			    	</ul>
 
@@ -160,11 +165,11 @@ $(function() {
    			    <li class="nav-item dropdown">
    			    	<a href="#" class="nav-link dropdown-toggle" id="activities" role="button" data-toggle="dropdown" aria-haspop="true" aria-expanded="false">Activities</a>
    			    	<ul class="dropdown-menu" aria-labelledby="activities">
-   			    		<li><a class="dropdown-item" href="#">NSS</a></li>
-   			    		<li><a class="dropdown-item" href="#">NCC</a></li>
-   			    		<li><a class="dropdown-item" href="#">I E D C</a></li>
-   			    		<li><a class="dropdown-item" href="#">Boomithra Sena</a></li>
-   			    		<li><a class="dropdown-item" href="#">P T A</a></li>
+   			    		<li><a class="dropdown-item" href="activities.php">NSS</a></li>
+   			    		<li><a class="dropdown-item" href="activities.php">NCC</a></li>
+   			    		<li><a class="dropdown-item" href="activities.php">I E D C</a></li>
+   			    		<li><a class="dropdown-item" href="activities.php">Boomithra Sena</a></li>
+   			    		<li><a class="dropdown-item" href="pdf_files/pta.pdf" target="_blank">P T A</a></li>
    			    		
    			    	</ul>
 
@@ -188,9 +193,9 @@ $(function() {
    			    <li class="nav-item dropdown">
    			    	<a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" id="more" aria-haspopup="true" aria-expanded="false">More</a>
    			    	<ul class="dropdown-menu" aria-labelledby="more">
-   			    		<li><a href="#" class="dropdown-item">Alumni</a></li>
-   			    		<li><a href="#" class="dropdown-item">More Links</a></li>
-   			    		<li><a href="#" class="dropdown-item">Grievance Redressal</a></li>
+   			    		<li><a href="reg.php" class="dropdown-item">Alumni</a></li>
+   			    		<li><a href="links.php" class="dropdown-item">More Links</a></li>
+   			    		<li><a href="grievance-cell.php" class="dropdown-item">Grievance Submission</a></li>
    			    		
    			    	</ul>
    			    </li>

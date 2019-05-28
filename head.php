@@ -2,7 +2,7 @@
     session_start();
    ?>
 	<head>
-	<title>GPTC PALAKKAD</title>
+	<title>Govt. Polytechnic College, Palakkad</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -43,6 +43,8 @@
     <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/bootnavbar.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/ico/favicon.ico" />
+
 
     <meta name="description" content="Multi level hover dropdown Navbar for bootstrap 4">
     <meta name="keywords" content="Multi level hover dropdown Navbar for bootstrap 4">

@@ -23,9 +23,9 @@ include "connection.php";
 
 }
  </style>
- <div class="gallery " id="gallery">
+ <div class="gallery " id="gallery" style="padding :20px;">
         <div class="container">
-            <h3 class="text-bl text-center font-weight-bold mb-2">OFFICERS</h3>
+            <h3 class="text-bl font-weight-bold mb-2" style="border-bottom: 1px solid black;">OFFICERS</h3>
             <div class="row no-gutters">
  <?php
                         $sql = "SELECT * FROM images where album='officers' order by id asc";
@@ -39,9 +39,9 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1 container'><img src='$path' alt='image' class='img-fluid'><div class='bottom-right'><b>$position</b></div></div>";
 }}
 ?> <br><br>
-    <div class="gallery " id="gallery">
+    <div class="gallery " id="gallery" style="margin-top: 20px;">
         <div class="container">
-            <h3 class="text-bl text-center font-weight-bold mb-2">ACHIEVEMETS</h3>
+            <h3 class="text-bl  font-weight-bold mb-2" style="border-bottom: 1px solid black;">ACHIEVEMETS</h3>
             <div class="row no-gutters">
  <?php
                         $sql = "SELECT * FROM images where album='iedcachieve' order by id desc";
@@ -60,9 +60,9 @@ echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='im
     <input type="submit" name="upload" value="upload">
            </form></div></div></div>
     <!-- //gallery -->
-    <div class="gallery " id="gallery">
+    <div class="gallery " id="gallery" style="margin-top: 20px;">
         <div class="container">
-            <h3 class="text-bl text-center font-weight-bold mb-2">EVENTS</h3>
+            <h3 class="text-bl font-weight-bold mb-2" style="border-bottom: 1px solid black;">EVENTS</h3>
             <div class="row no-gutters">
  <?php
                         $sql = "SELECT * FROM images where album='iedcevent' order by id desc";

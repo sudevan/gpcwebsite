@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 24, 2019 at 02:37 PM
+-- Generation Time: May 28, 2019 at 01:25 PM
 -- Server version: 5.7.26-0ubuntu0.18.04.1
 -- PHP Version: 7.2.17-0ubuntu0.18.04.1
 
@@ -55,6 +55,29 @@ CREATE TABLE `albums` (
   `description` varchar(100) NOT NULL,
   `category` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `announcement`
+--
+
+CREATE TABLE `announcement` (
+  `id` int(11) NOT NULL,
+  `fromdate` date NOT NULL,
+  `todate` date NOT NULL,
+  `headline` varchar(30) NOT NULL,
+  `content` text NOT NULL,
+  `link` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `announcement`
+--
+
+INSERT INTO `announcement` (`id`, `fromdate`, `todate`, `headline`, `content`, `link`) VALUES
+(4, '2019-05-20', '1970-01-01', 'college ', 'college will  be reopened on 3rd june', 'local'),
+(5, '2019-05-27', '2019-06-30', 'admission ', 'admission will be started soon', 'http://www.polyadmission.org/index.php?r=site%2Fhome');
 
 -- --------------------------------------------------------
 
@@ -474,23 +497,73 @@ INSERT INTO `idcardissue` (`admissionno`, `issuetime`) VALUES
 
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `imgpath` varchar(50) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `imgpath` varchar(200) NOT NULL,
   `type` varchar(20) NOT NULL,
-  `album` varchar(50) NOT NULL
+  `album` varchar(50) NOT NULL,
+  `position` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `images`
 --
 
-INSERT INTO `images` (`id`, `name`, `imgpath`, `type`, `album`) VALUES
-(22, 'elearning.png', 'images/DTE/elearning.png', 'png', 'director'),
-(23, 'baim-hanif-89800-unsplash.jpg', 'images/DTE/baim-hanif-89800-unsplash.jpg', 'jpg', 'director'),
-(24, '', 'images/che/civil.png', 'png', 'che'),
-(25, '', 'images/che/dumbbell.png', 'png', 'che'),
-(26, '', 'images/che/6.JPG', 'jpg', 'che'),
-(27, '3.JPG', 'images/Alumni/3.JPG', 'jpg', 'Alumni');
+INSERT INTO `images` (`id`, `name`, `imgpath`, `type`, `album`, `position`) VALUES
+(4, 'DTE1.jpeg', 'images/DTE/DTE1.jpeg', 'jpeg', 'director', ''),
+(5, 'DTE2.jpeg', 'images/DTE/DTE2.jpeg', 'jpeg', 'director', ''),
+(6, 'DTE3.jpeg', 'images/DTE/DTE3.jpeg', 'jpeg', 'director', ''),
+(7, 'DTE4.jpeg', 'images/DTE/DTE4.jpeg', 'jpeg', 'director', ''),
+(8, 'DTE5.jpeg', 'images/DTE/DTE5.jpeg', 'jpeg', 'director', ''),
+(16, 'JK2.jpg', 'images/JK/JK2.jpg', 'jpg', 'JK', ''),
+(17, 'JK3.jpg', 'images/JK/JK3.jpg', 'jpg', 'JK', ''),
+(18, 'JK4.jpg', 'images/JK/JK4.jpg', 'jpg', 'JK', ''),
+(19, '1.JPG', 'images/adblock/1.JPG', 'jpg', 'adminblock', ''),
+(20, '2.JPG', 'images/adblock/2.JPG', 'jpg', 'adminblock', ''),
+(21, '5.JPG', 'images/adblock/5.JPG', 'jpg', 'adminblock', ''),
+(22, '7.JPG', 'images/adblock/7.JPG', 'jpg', 'adminblock', ''),
+(23, '9.JPG', 'images/adblock/9.JPG', 'jpg', 'adminblock', ''),
+(24, '12.JPG', 'images/adblock/12.JPG', 'jpg', 'adminblock', ''),
+(25, '11.JPG', 'images/adblock/11.JPG', 'jpg', 'adminblock', ''),
+(26, '15.JPG', 'images/adblock/15.JPG', 'jpg', 'adminblock', ''),
+(27, '34.jpg', 'images/adblock/34.jpg', 'jpg', 'adminblock', ''),
+(28, '5.jpg', 'images/Alumni/5.jpg', 'jpg', 'Alumni', ''),
+(29, '7.jpg', 'images/Alumni/7.jpg', 'jpg', 'Alumni', ''),
+(30, '8.jpg', 'images/Alumni/8.jpg', 'jpg', 'Alumni', ''),
+(31, '10.jpg', 'images/Alumni/10.jpg', 'jpg', 'Alumni', ''),
+(32, '24.jpg', 'images/Alumni/24.jpg', 'jpg', 'Alumni', ''),
+(33, '48.jpg', 'images/Alumni/48.jpg', 'jpg', 'Alumni', ''),
+(34, '32.jpg', 'images/Alumni/32.jpg', 'jpg', 'Alumni', ''),
+(35, '1.jpg', 'images/newsletter/1.jpg', 'jpg', 'newsletter', ''),
+(36, '2.jpg', 'images/newsletter/2.jpg', 'jpg', 'newsletter', ''),
+(37, '10.jpg', 'images/newsletter/10.jpg', 'jpg', 'newsletter', ''),
+(38, '8.jpg', 'images/newsletter/8.jpg', 'jpg', 'newsletter', ''),
+(39, '6.jpg', 'images/newsletter/6.jpg', 'jpg', 'newsletter', ''),
+(43, 'WhatsApp Image 2019-05-28 at 10.07.19 AM.jpeg', 'images/iedc/achievements/WhatsApp Image 2019-05-28 at 10.07.19 AM.jpeg', 'jpeg', 'iedcachieve', ''),
+(44, 'image2.jpeg', 'images/iedc/achievements/image2.jpeg', 'jpeg', 'iedcachieve', ''),
+(45, 'image3.jpg', 'images/iedc/achievements/image3.jpg', 'jpg', 'iedcachieve', ''),
+(46, 'image5.jpeg', 'images/iedc/achievements/image5.jpeg', 'jpeg', 'iedcachieve', ''),
+(47, 'image6.jpeg', 'images/iedc/achievements/image6.jpeg', 'jpeg', 'iedcachieve', ''),
+(48, 'image7.jpeg', 'images/iedc/achievements/image7.jpeg', 'jpeg', 'iedcachieve', ''),
+(49, 'image8.jpeg', 'images/iedc/achievements/image8.jpeg', 'jpeg', 'iedcachieve', ''),
+(50, 'image9.jpeg', 'images/iedc/achievements/image9.jpeg', 'jpeg', 'iedcachieve', ''),
+(51, 'image10.jpeg', 'images/iedc/achievements/image10.jpeg', 'jpeg', 'iedcachieve', ''),
+(52, 'image13.jpeg', 'images/iedc/achievements/image13.jpeg', 'jpeg', 'iedcachieve', ''),
+(53, 'image1.jpeg', 'images/iedc/achievements/image1.jpeg', 'jpeg', 'iedcachieve', ''),
+(54, 'd80276e6-be04-4c53-844f-fdd2a5eaf031.jpg', 'images/iedc/events/d80276e6-be04-4c53-844f-fdd2a5eaf031.jpg', 'jpg', 'iedcevent', ''),
+(55, 'IMG_20180302_164705-01.jpeg', 'images/iedc/events/IMG_20180302_164705-01.jpeg', 'jpeg', 'iedcevent', ''),
+(56, 'IMG_20180718_141148.jpg', 'images/iedc/events/IMG_20180718_141148.jpg', 'jpg', 'iedcevent', ''),
+(57, 'IMG_20180809_162726_HDR-01.jpeg', 'images/iedc/events/IMG_20180809_162726_HDR-01.jpeg', 'jpeg', 'iedcevent', ''),
+(58, 'IMG-20180822-WA0022-01.jpeg', 'images/iedc/events/IMG-20180822-WA0022-01.jpeg', 'jpeg', 'iedcevent', ''),
+(59, 'P_20180829_133248.jpg', 'images/iedc/events/P_20180829_133248.jpg', 'jpg', 'iedcevent', ''),
+(60, 'IMG_1116.JPG', 'images/iedc/events/IMG_1116.JPG', 'jpg', 'iedcevent', ''),
+(61, 'P_20181103_155334.jpg', 'images/iedc/events/P_20181103_155334.jpg', 'jpg', 'iedcevent', ''),
+(62, 'P_20181201_095721.jpg', 'images/iedc/events/P_20181201_095721.jpg', 'jpg', 'iedcevent', ''),
+(63, 'WhatsApp Image 2019-05-28 at 11.10.06 AM.jpeg', 'images/iedc/events/WhatsApp Image 2019-05-28 at 11.10.06 AM.jpeg', 'jpeg', 'iedcevent', ''),
+(64, 'WhatsApp Image 2019-05-28 at 11.10.06 AM (2).jpeg', 'images/iedc/events/WhatsApp Image 2019-05-28 at 11.10.06 AM (2).jpeg', 'jpeg', 'iedcevent', ''),
+(65, 'nodelofficer.jpeg', 'images/iedc/nodelofficer.jpeg', 'jpg', 'officers', 'NODEL OFFICER'),
+(66, 'sudevan.jpg', 'images/iedc/sudevan.jpg', 'jpg', 'officers', 'TECHNICAL OFFICER'),
+(67, 'ceo.jpeg', 'images/iedc/ceo.jpeg', 'jpg', 'officers', 'C.E.O'),
+(69, 'cto.jpeg', 'images/iedc/cto.jpeg', 'jpg', 'officers', 'C.T.O');
 
 -- --------------------------------------------------------
 
@@ -526,19 +599,9 @@ CREATE TABLE `news` (
   `date` date NOT NULL,
   `heading` text NOT NULL,
   `news` text NOT NULL,
-  `link` varchar(70) NOT NULL,
+  `link` varchar(300) NOT NULL,
   `isactive` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `news`
---
-
-INSERT INTO `news` (`id`, `date`, `heading`, `news`, `link`, `isactive`) VALUES
-(1, '2019-05-18', 'admission', 'asdfghjkl', 'local', 1),
-(2, '2019-05-25', 'admissionadsafssafdsa', 'how are you ', 'local', 1),
-(3, '2019-05-03', 'fazil', 'qwerty', 'local', 1),
-(4, '2019-05-17', 'fazil', 'qwerty', 'local', 1);
 
 -- --------------------------------------------------------
 
@@ -26461,6 +26524,23 @@ INSERT INTO `registration` (`id`, `name`, `mobile`, `email`, `batch`, `branch`, 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `staffs`
+--
+
+CREATE TABLE `staffs` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `designation` varchar(70) NOT NULL,
+  `department` varchar(70) NOT NULL,
+  `pen` int(11) NOT NULL,
+  `path` varchar(200) NOT NULL,
+  `type` varchar(50) NOT NULL,
+  `imagename` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `student`
 --
 
@@ -28458,6 +28538,18 @@ INSERT INTO `users` (`email`, `password`, `usertype`) VALUES
 ('academic@gptcpalakkad.ac.in', 'academic@123', 'academic'),
 ('records@gptcpalakkad.ac.in', '123', 'public');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `webadmin`
+--
+
+CREATE TABLE `webadmin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indexes for dumped tables
 --
@@ -28472,6 +28564,12 @@ ALTER TABLE `adminlogin`
 -- Indexes for table `albums`
 --
 ALTER TABLE `albums`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `announcement`
+--
+ALTER TABLE `announcement`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -28561,6 +28659,12 @@ ALTER TABLE `registration`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `staffs`
+--
+ALTER TABLE `staffs`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `student`
 --
 ALTER TABLE `student`
@@ -28595,6 +28699,12 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`email`);
 
 --
+-- Indexes for table `webadmin`
+--
+ALTER TABLE `webadmin`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -28609,6 +28719,11 @@ ALTER TABLE `adminlogin`
 ALTER TABLE `albums`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `announcement`
+--
+ALTER TABLE `announcement`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
@@ -28622,7 +28737,7 @@ ALTER TABLE `gallery`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 --
 -- AUTO_INCREMENT for table `master_branch`
 --
@@ -28632,7 +28747,7 @@ ALTER TABLE `master_branch`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `rec_location_master`
 --
@@ -28654,6 +28769,11 @@ ALTER TABLE `rec_record_master`
 ALTER TABLE `registration`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2904;
 --
+-- AUTO_INCREMENT for table `staffs`
+--
+ALTER TABLE `staffs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `tcissue`
 --
 ALTER TABLE `tcissue`
@@ -28668,6 +28788,11 @@ ALTER TABLE `tender`
 --
 ALTER TABLE `ticker`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=948;
+--
+-- AUTO_INCREMENT for table `webadmin`
+--
+ALTER TABLE `webadmin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Constraints for dumped tables
 --

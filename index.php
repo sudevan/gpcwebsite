@@ -17,23 +17,23 @@
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000" style="width: 100%;height: 50vh">
 					<div class="carousel-inner" >
 						<div class="carousel-item active">
-							<img class="d-block w-100img-responsive" src="images/slideshow/1.JPG" alt="First slide" style="width: 100%;height: 50vh">
+							<img class="d-block w-100img-responsive" src="images/slideshow/1.jpg" alt="First slide" style="width: 100%;height: 50vh">
 							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/slideshow/2.JPG" alt="Second slide" style="width: 100%;height:50vh">
+							<img class="d-block w-100 img-responsive" src="images/slideshow/2.jpg" alt="Second slide" style="width: 100%;height:50vh">
 							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/slideshow/3.JPG" alt="Third slide" style="width: 100%;height: 50vh">
+							<img class="d-block w-100 img-responsive" src="images/slideshow/3.jpg" alt="Third slide" style="width: 100%;height: 50vh">
 							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/slideshow/4.JPG" alt="Third slide" style="width: 100%;height: 50vh">
+							<img class="d-block w-100 img-responsive" src="images/slideshow/4.jpg" alt="Third slide" style="width: 100%;height: 50vh">
 							
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100 img-responsive" src="images/slideshow/5.JPG" alt="Third slide" style="width: 100%;height: 50vh">
+							<img class="d-block w-100 img-responsive" src="images/slideshow/5.jpg" alt="Third slide" style="width: 100%;height: 50vh">
 							
 						</div>
 					</div>
@@ -82,12 +82,8 @@
     	<!-- vision-missioin and principal's message -->
         <section class="bg-white">
 			<div class="container">
-				<div class="row  text-center bg-white">
-		    		<div class="col-lg-6 " style="padding: 0">
-		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" href="https://goo.gl/forms/teDeKxfPVjcxf22D2" target="_blank">STUDENT REGISTRATION</a></marquee>
-		    		</div>
-		    		
-		    		<div class="col-lg-6" style="padding: 0">
+				<div class="row  text-center bg-white">	    		
+		    		<div class="col-lg-12" style="padding: 0">
 		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" 	href="https://forms.gle/NrHQrr9s26xKAVnHA" target="_blank">APPLY FOR TC</a></marquee>
 		    		</div>
     			</div>

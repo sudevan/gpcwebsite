@@ -22,7 +22,7 @@
                                     
                                 </div>
                                 <div class="text-center py-4">
-                                    <button class="btn btn-indigo" onclick="loging()" style="color: white;">login<i class="fa fa-paper-plane-o ml-1"></i></button>
+                                    <button class="btn btn-indigo" onclick="loging()" style="color: white; border: white;">login<i class="fa fa-paper-plane-o ml-1"></i></button>
                                 </div>
                             </section>
                             <!-- Form subscription -->
@@ -49,19 +49,18 @@
     var flag= this.responseText;
     alert(flag);
   
-    // if (flag==="") {
+    if (flag==="login") {
 
-    // alert(flag);
-    // }
-    //   else{
-    //     alert("invalid");
-    //   }
+    alert(flag);
+    }
+      else{
+        alert("invalid");
+      }
 
     }
   };
 
   xhttp.open("GET", "loginsample.php?username="+username+"&password="+password, true);
-      xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
 
   xhttp.send();

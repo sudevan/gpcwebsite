@@ -175,7 +175,7 @@ $(function() {
 
    			    </li>
    			    <!-- iedc -->
-   			    <li class="nav-item"><a class="nav-link" href="#">IEDC</a></li>
+   			    <li class="nav-item"><a class="nav-link" href="iedc.php">IEDC</a></li>
    			    <!-- organizations -->
    			    <li class="nav-item dropdown">
    			    	<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" id="Organization" aria-haspopup="true" aria-expanded="false">Organization</a>
@@ -196,6 +196,9 @@ $(function() {
    			    		<li><a href="reg.php" class="dropdown-item">Alumni</a></li>
    			    		<li><a href="links.php" class="dropdown-item">More Links</a></li>
    			    		<li><a href="grievance-cell.php" class="dropdown-item">Grievance Submission</a></li>
+                <li><a href="https://swayam.gov.in/" class="dropdown-item">Self Learning</a></li>
+                <li><a href="https://nptel.ac.in/" class="dropdown-item">NPTEL</a></li>
+                <li><a href="https://www.aicte-india.org/feedback/" class="dropdown-item">Feedback Facility</a></li>
    			    		
    			    	</ul>
    			    </li>

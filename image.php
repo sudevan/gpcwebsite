@@ -35,6 +35,14 @@ $album="";
 			$album="newsletter";
 			$target_dir="images/newsletter/";
 			break;
+		case 'iedcevent':
+			$album="iedcevent";
+			$target_dir="images/iedc/events/";
+			break;
+		case 'iedcachieve':
+			$album="iedcachieve";
+			$target_dir="images/iedc/achievements/";
+			break;
 		default:
 			$album="other";
 			$target_dir="images/";
@@ -85,16 +93,25 @@ if ($uploadOk == 0) {
     	$filename=$_FILES["file_image"]["name"];
         echo "The file ". basename( $_FILES["file_image"]["name"]). " has been uploaded.";
         echo"<script>alert('uploaded successfully');</script>";
-        echo "<script>window.location.href='photos.php'</script>";
+        goto end;
+
 
     } else {
         echo "<script>alert('error uploading file');</script>";
          echo "<script>window.location.href='photos.php'</script>";
-}
+}	
+end:
 	 $sql="INSERT INTO images (name,imgpath,type,album) VALUES ('$filename','$target_file','$imageFileType','$album')";
 	 $result=mysqli_query($conn,$sql);
 	 if ($result) {
  		echo "uploaded successfully";
+
+ 		if ($album==="iedcachieve" || $album==="iedcevent") {
+        	echo "<script>window.location.href='iedc.php'</script>";
+        }
+        else{
+        echo "<script>window.location.href='photos.php'</script>";
+    }
 	 }
 	 else{
 	 	echo "error uploading";

@@ -631,6 +631,11 @@
 									<span class="bg-white external-links-span" ><i class="fa fa-tags padding10" aria-hidden='true'></i></span>&nbsp;&nbsp;AICTE Schemes and Scholarships
 								</a>
 							</div>
+							<div style="margin-bottom: 10px;" >
+								<a  href="https://swayam.gov.in/" class=" text-wh external-links-a">
+									<span class="bg-white external-links-span"><i class="fa fa-edit padding10" aria-hidden='true'></i></span>&nbsp;&nbsp;Self Learning
+								</a>
+							</div>
 					</div>
 				</div>
 

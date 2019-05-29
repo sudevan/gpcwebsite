@@ -84,6 +84,16 @@
 			<div class="container">
 				<div class="row  text-center bg-white">	    		
 		    		<div class="col-lg-12" style="padding: 0">
+		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" 	href="http://www.polyadmission.org/index.php?r=site%2Fhome" target="_blank">ADMISSION STARTED<img src="images/new.png" alt="image" height="40" width="40"></a></marquee>
+		    		</div>
+    			</div>
+    		</div>
+   
+		</section> 
+		    <section class="bg-white">
+			<div class="container">
+				<div class="row  text-center bg-white">	    		
+		    		<div class="col-lg-12" style="padding: 0">
 		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" 	href="https://forms.gle/NrHQrr9s26xKAVnHA" target="_blank">APPLY FOR TC</a></marquee>
 		    		</div>
     			</div>
@@ -160,7 +170,7 @@
 							</div>
 
 					   </marquee>
-						<!-- <div style="padding: 10px; ">
+<!-- 						<div style="padding: 10px; ">
 							<h5 style="border-bottom: 1px solid black">news heading</h5>
 							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">
 								<form name="newsform" id="newsform" method="post" action="announcement.php" class="adminform">
@@ -194,9 +204,9 @@
   </table>
   </form>
 </p>
-						</div> -->
+						</div>
 
-					</div>
+		 -->			</div>
 
 					
 					<div class="col-lg-4">

@@ -283,7 +283,7 @@
 						<h5 class="text-wh bg-danger" style="padding:10px">Downloads<span class="float-right"><i class="fa fa-download"></i></span></h5>
 						<div style="padding: 10px; border-bottom: 2px solid #dc3545">
 							<div style="margin-bottom: 10px">
-								<a  href="#" class=" text-bl down-item-a" id="div" style="">
+								<a  href="https://drive.google.com/drive/folders/1hPhB-18slfPIKBVa2qoU8s9iDkKx3Q89?usp=sharing" class=" text-bl down-item-a" id="div" style="">
 									<span class="bg-white" style=""><i class="fa fa-newspaper-o" ></i></span>&nbsp;&nbsp;Previous Question Papers
 								</a>
 							</div>

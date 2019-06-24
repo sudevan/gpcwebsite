@@ -1,5 +1,7 @@
 	<?php 
-    session_start();
+	
+	include("connection.php");
+	
    ?>
 	<head>
 	<title>Govt. Polytechnic College, Palakkad</title>
@@ -69,9 +71,7 @@ $(function() {
 });
 </script>
 <style type="text/css">
-  .mytext{
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-        }
+  
 </style>
 </head>
 
@@ -89,8 +89,18 @@ $(function() {
          	</ol>
 
          </div>
-         <button class="btn btn-danger" style="padding: 3px;margin-right: 5px" onclick="window.location.href='log.php'" id="login" value="login">Login</button>
-        
+		<?php
+		if(isset($_SESSION['usertype']))
+		{
+		if($_SESSION['usertype']==="admin")
+		{
+		?><form action="adminlogin.php" method="post">
+         <input class="btn btn-danger" type="submit" style="padding: 3px;margin-right: 5px"  id="login" name="logoutadmin" value="logout">
+		 </form>
+		<?php 
+		}
+		}
+		?>
      
   <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

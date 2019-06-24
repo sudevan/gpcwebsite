@@ -88,11 +88,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-<form action="image.php" method="post" enctype="multipart/form-data" class="adminform">
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="director">
-    <input type="submit" name="upload" value="upload">
-           </form></div></div></div>
+</div></div></div>
     <!-- //gallery -->
     <!-- gallery -->
     <div class="gallery " id="gallery">
@@ -110,11 +106,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-            <form action="image.php" method="post" enctype="multipart/form-data" class="adminform" >
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="JK">
-    <input type="submit" name="upload" value="upload">
-           </form>    
+               
             </div>
         </div>
     </div>
@@ -135,11 +127,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-            <form action="image.php" method="post" enctype="multipart/form-data">
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="che">
-    <input type="submit" name="upload" value="upload">
-           </form>         
+                  
                 
             </div>
         </div>
@@ -160,11 +148,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-            <form action="image.php" method="post" enctype="multipart/form-data" class="adminform">
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="adminblock">
-    <input type="submit" name="upload" value="upload">
-           </form> 
+           
              </div>
         </div>
     </div>
@@ -184,11 +168,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-            <form action="image.php" method="post" enctype="multipart/form-data" class="adminform">
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="Alumni">
-    <input type="submit" name="upload" value="upload">
-           </form> 
+
             </div>
         </div>
     </div>
@@ -208,11 +188,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-            <form action="image.php" method="post" enctype="multipart/form-data">
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="college">
-    <input type="submit" name="upload" value="upload">
-           </form> 
+           
             </div>
         </div>
     </div>
@@ -232,11 +208,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-            <form action="image.php" method="post" enctype="multipart/form-data" class="adminform">
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="newsletter">
-    <input type="submit" name="upload" value="upload">
-           </form> 
+            
             </div>
         </div>
     </div>

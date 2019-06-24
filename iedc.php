@@ -54,10 +54,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-<form action="image.php" method="post" enctype="multipart/form-data" class="adminform">
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="iedcachieve">
-    <input type="submit" name="upload" value="upload">
+
            </form></div></div></div>
     <!-- //gallery -->
     <div class="gallery " id="gallery" style="margin-top: 20px;">
@@ -75,11 +72,7 @@ if ($result->num_rows > 0) {
 echo "<div class='col-md-4 gallery-grid1'><img src='$path' alt='image' class='img-fluid'></div>";
 }}
 ?> 
-<form action="image.php" method="post" enctype="multipart/form-data" class="adminform">
-    add new image<input type="file" name="file_image">
-    <input type="hidden" name="album" value="iedcevent">
-    <input type="submit" name="upload" value="upload">
-           </form></div></div></div>
+</div></div></div>
  <?php 
  include"tail.php";
   ?>

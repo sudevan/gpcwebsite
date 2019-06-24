@@ -25,7 +25,7 @@ if ($result) {
 }else{
    echo "<script>alert('error during insertion');</script>"; 
 }
-echo "<script>window.location.href='index.php';</script>";
+echo "<script>window.location.href='adminpage.php';</script>";
 }
 if (isset($_POST['announce'])) {
       $head=$_POST['head'];
@@ -45,7 +45,7 @@ if ($result) {
 }else{
    echo "<script>alert('error during insertion');</script>"; 
 }
-echo "<script>window.location.href='index.php';</script>";
+echo "<script>window.location.href='adminpage.php';</script>";
 
 }
 ?>

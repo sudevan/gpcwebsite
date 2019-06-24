@@ -60,33 +60,33 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
     } else {
 
         echo"<script>alert('image is large or invalid image');</script>";
-        echo "<script>window.location.href='photos.php'</script>";
+        echo "<script>window.location.href='adminpage.php'</script>";
         $uploadOk = 0;
     }
 }
 // Check if file already exists
 if (file_exists($target_file)) {
     echo"<script>alert('Sorry, file already exists.');</script>";
-        echo "<script>window.location.href='photos.php'</script>";
+        echo "<script>window.location.href='adminpage.php'</script>";
     $uploadOk = 0;
 }
 // Check file size
 if ($_FILES["file_image"]["size"] > 50000000) {
     echo"<script>alert('Sorry, your file is too large.');</script>";
-        echo "<script>window.location.href='photos.php'</script>";
+        echo "<script>window.location.href='adminpage.php'</script>";
     $uploadOk = 0;
 }
 // Allow certain file formats
 if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 && $imageFileType != "gif" ) {
 echo"<script>alert('Sorry, only JPG, JPEG, PNG & GIF files are allowed.');</script>";
-        echo "<script>window.location.href='photos.php'</script>";
+        echo "<script>window.location.href='adminpage.php'</script>";
     $uploadOk = 0;
 }
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
     echo"<script>alert('Sorry, your file was not uploaded.');</script>";
-        echo "<script>window.location.href='photos.php'</script>";
+        echo "<script>window.location.href='adminpage.php'</script>";
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["file_image"]["tmp_name"], $target_file)) {
@@ -98,7 +98,7 @@ if ($uploadOk == 0) {
 
     } else {
         echo "<script>alert('error uploading file');</script>";
-         echo "<script>window.location.href='photos.php'</script>";
+         echo "<script>window.location.href='adminpage.php'</script>";
 }	
 end:
 	 $sql="INSERT INTO images (name,imgpath,type,album) VALUES ('$filename','$target_file','$imageFileType','$album')";

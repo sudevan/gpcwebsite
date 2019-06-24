@@ -159,7 +159,7 @@
 								?>
 								<div style="padding: 10px">
 								<h6 style="border-bottom: 1px solid black" class="mytext"><?php echo $row['heading']; ?>(<?php echo $row['date']; ?>)</h6>
-								<p class="text-bl mytext" style="font-size: 14px;line-height: normal;text-align: justify;margin-bottom: 0"><?php echo $row['news']; ?>
+								<p class="text-bl mytext" style="font-size: 12px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row['news'] ?>
 								<a href="<?php echo $row['link']?>" class="float-right">Read more...</a></p>
 							</div>
 								<?php 
@@ -169,44 +169,7 @@
 								
 							</div>
 
-					   </marquee>
-<!-- 						<div style="padding: 10px; ">
-							<h5 style="border-bottom: 1px solid black">news heading</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0">
-								<form name="newsform" id="newsform" method="post" action="announcement.php" class="adminform">
-  <table width="50%" border="0" cellspacing="0" cellpadding="0">
-
-    <tr>
-       <td>Enter the date</td>
-      <td><input name="date" type="date" id="date"></td>
-    </tr>
-    <tr> 
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr> 
-      <td>Enter The Headline</td>
-      <td><input name="headline" type="text" id="headline"></td>
-    </tr>
-    <tr> 
-      <td>Enter The News Story</td>
-      <td><textarea name="story" id="story"></textarea></td>
-    </tr>
-    <tr> 
-      <td>Enter The News link</td>
-      <td><input type="text" name="link" id="link"></td>
-    </tr>
-    <tr> 
-      <td colspan="2"><div align="center">
-          <input name="add" type="submit" id="add" value="addnews">
-        </div></td>
-    </tr>
-  </table>
-  </form>
-</p>
-						</div>
-
-		 -->			</div>
+					  		</div>
 
 					
 					<div class="col-lg-4">
@@ -219,55 +182,19 @@
                                 	while($row2=$result2->fetch_assoc()){
                                 		?>
 
-							<h5 style="border-bottom: 1px solid black"><?php echo $row2['headline'] ?>( <?php echo $row2['fromdate'] ?>  )</h5>
-							<p class="text-bl" style="font-size: 16px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row2['content'] ?>
-							<br><br>
+							<h6 style="border-bottom: 1px solid black" class="mytext"><?php echo $row2['headline'] ?>( <?php echo $row2['fromdate'] ?>  )</h6>
+							<p class="text-bl mytext" style="font-size: 12px;line-height: normal;font-family: Arial, Helvetica, sans-serif;text-align: justify;margin-bottom: 0"><?php echo $row2['content'] ?>
+							
 
 							<a href="<?php echo $row2['link']?>" class="float-right">Read more...</a></p>
-								<br><br>
-						</div>
+								<br>
+						
 
 								
                                 <?php	}
                                 }
 							 ?>
-											<!-- <form name="announcement" id="newsform" method="post" action="announcement.php" class="adminform">
-										  <table width="50%" border="0" cellspacing="0" cellpadding="0">
-
-										    <tr>
-										       <td>from date</td>
-										      <td><input name="fromdate" type="date" id="fromdate"></td>
-										    </tr>
-										       <tr>
-										       <td>from date</td>
-										      <td><input name="todate" type="date" id="todate"></td>
-										    </tr>
-										    <tr> 
-										      <td>&nbsp;</td>
-										      <td>&nbsp;</td>
-										    </tr>
-										    <tr> 
-										      <td>Enter The Headline</td>
-										      <td><input name="head" type="text" id="head"></td>
-										    </tr>
-										    <tr> 
-										      <td>Enter The announcement</td>
-										      <td><textarea name="announcement" id="announcement"></textarea></td>
-										    </tr>
-										    <tr> 
-										      <td>Enter The link/td>
-										      <td><input type="text" name="link" id="link"></td>
-										    </tr>
-										    <tr> 
-										      <td colspan="2"><div align="center">
-										          <input name="announce" type="submit" id="announce" value="announce">
-										        </div></td>
-										    </tr>
-										  </table>
-										  </form> -->
-						<!-- </div> -->
-
-					<!-- </div> -->
+								</div>	</div>		
                         <style type="text/css">
                         	.down-item-a{
                                         line-height: 20px;border-left: 2px solid #3575d3 ;display:block;padding:3px;font-size: 18px;
@@ -652,7 +579,6 @@
 			</div>
 		</section>
 		
-				
 		
 		<?php 
        		include("tail.php");

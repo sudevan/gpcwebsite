@@ -84,7 +84,7 @@
 			<div class="container">
 				<div class="row  text-center bg-white">	    		
 		    		<div class="col-lg-12" style="padding: 0">
-		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" 	href="http://www.polyadmission.org/index.php?r=site%2Fhome" target="_blank">ADMISSION STARTED<img src="images/new.png" alt="image" height="40" width="40"></a></marquee>
+		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" 	href="https://forms.gle/LLLcoSNkvwzrD73e8" target="_blank">LATERAL ENTRY APPLICATION<img src="images/new.png" alt="image" height="40" width="40"></a></marquee>
 		    		</div>
     			</div>
     		</div>

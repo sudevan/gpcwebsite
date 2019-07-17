@@ -82,24 +82,17 @@
     	<!-- vision-missioin and principal's message -->
         <section class="bg-white">
 			<div class="container">
-				<div class="row  text-center bg-white">	    		
+    			<div class="row  text-left bg-white">	    		
 		    		<div class="col-lg-12" style="padding: 0">
-		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" 	href="https://forms.gle/LLLcoSNkvwzrD73e8" target="_blank">LATERAL ENTRY APPLICATION<img src="images/new.png" alt="image" height="40" width="40"></a></marquee>
+		    			<marquee direction="left"> 
+		    				<a class="text-bl" style="font-size: 20px" 	href="vacancyrepot.pdf" target="_blank">Vacancy as on 15/7/2019 <img src="images/new.png" alt="image" height="40" width="40"></a>
+		    			</marquee>
 		    		</div>
     			</div>
     		</div>
-   
-		</section> 
-		    <section class="bg-white">
-			<div class="container">
-				<div class="row  text-center bg-white">	    		
-		    		<div class="col-lg-12" style="padding: 0">
-		    			<marquee direction="left"> <a class="text-bl" style="font-size: 20px" 	href="https://forms.gle/NrHQrr9s26xKAVnHA" target="_blank">APPLY FOR TC</a></marquee>
-		    		</div>
-    			</div>
-    		</div>
-   
 		</section>
+
+
 		<style type="text/css">
 			.grid-containe{
 					  display: grid;

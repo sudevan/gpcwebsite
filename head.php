@@ -147,8 +147,10 @@ $(function() {
    			      	<li><a href="https://docs.google.com/document/d/e/2PACX-1vSX7-fmQGlSm7pATn2sBhWh6ubw16uW2quQKzDg3x1EG7KZYy5FY8y2ZgzMFrhy8SY4QkgtMdBPFtXL/pub" class="dropdown-item" target="_blank">placement</a></li>
    			      	<li><a href="#" class="dropdown-item">Academic calender</a></li>
    			      	<li><a href="#" class="dropdown-item">college calender</a></li>
-   			      	<li><a href="#" class="dropdown-item">Lirary</a></li>
-   			      	
+   			      	<li><a href="#" class="dropdown-item">Library</a></li>
+               <li><a href="http://117.211.126.230/moodle" class="dropdown-item">Moodle</a></li>
+                <li><a href="https://docs.google.com/document/d/e/2PACX-1vTnBT9zHsDo22ENPbFEuPoCrObJovxQ8-LPoci2HJTs4LeBoAZuIQ9Qeod_221sWdknIee88HAFkkVB/pub" class="dropdown-item" >Students online utilities</a>
+   			      	</li>
    			      </ul>
    			    </li>
    			    <!-- Admissions -->

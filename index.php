@@ -81,15 +81,16 @@
                             
     	<!-- vision-missioin and principal's message -->
         <section class="bg-white">
-			<div class="container">
+			<!--<div class="container">
     			<div class="row  text-left bg-white">	    		
 		    		<div class="col-lg-12" style="padding: 0">
 		    			<marquee direction="left"> 
-		    				<a class="text-bl" style="font-size: 20px" 	href="vacancyrepot.pdf" target="_blank">Vacancy as on 15/7/2019 <img src="images/new.png" alt="image" height="40" width="40"></a>
+		    				<a class="text-bl" style="font-size: 20px" 	href="vacancyrepot.pdf" target="_blank">Vacancy as on 19/7/2019 <img src="images/new.png" alt="image" height="40" width="40"></a>
+		    				<a class="text-bl" style="font-size: 20px" 	href="News-GPC Palakkad -Spot2.pdf" target="_blank">Spot admission Schedule 20/7/2019 <img src="images/new.png" alt="image" height="40" width="40"></a>
 		    			</marquee>
 		    		</div>
     			</div>
-    		</div>
+    		</div> -->
 		</section>
 
 

@@ -85,7 +85,7 @@ $(function() {
          <div class="ml-auto head">
          	<ol class="padding10">
          		<li><a href="" class="text-wh"><i class="fa fa-phone"></i>0491 257 2640</a></li>
-         		<li><a class="text-wh" style="text-transform: lowercase;" href="mailto:palakkadpolytechnic@gmail.com"><i class="fa fa-envelope text-wh"></i> palakkadpolytechnic@gmail.com</a></li>
+         		<li><a class="text-wh" style="text-transform: lowercase;" href="mailto:palakkadpolytechnic@gmail.com"><i class="fa fa-envelope text-wh"></i> info@gptcpalakkad.ac.in</a></li>
          	</ol>
 
          </div>
@@ -139,8 +139,8 @@ $(function() {
    			      			<li><a href="eee.php" class="dropdown-item">Electrical And Electronics Engineering</a></li>
    			      			<li><a href="electronics.php" class="dropdown-item">Electronics Engineering</a></li>
    			      			<li><a href="chm.php" class="dropdown-item">Computer hardware Engineering</a></li>
-   			      			<li><a href="it.<?php  ?>" class="dropdown-item">Instrumentation Engineering</a></li>
-   			      			
+                    <li><a href="it.<?php  ?>" class="dropdown-item">Instrumentation Engineering</a></li>
+                    <li><a href="https://sites.google.com/view/gptcpkdworkshop" class="dropdown-item">General Workshop</a></li>
    			      		</ul>
    			      	</li>
 

@@ -81,16 +81,16 @@
                             
     	<!-- vision-missioin and principal's message -->
         <section class="bg-white">
-			<!--<div class="container">
+			<<div class="container">
     			<div class="row  text-left bg-white">	    		
 		    		<div class="col-lg-12" style="padding: 0">
 		    			<marquee direction="left"> 
-		    				<a class="text-bl" style="font-size: 20px" 	href="vacancyrepot.pdf" target="_blank">Vacancy as on 19/7/2019 <img src="images/new.png" alt="image" height="40" width="40"></a>
-		    				<a class="text-bl" style="font-size: 20px" 	href="News-GPC Palakkad -Spot2.pdf" target="_blank">Spot admission Schedule 20/7/2019 <img src="images/new.png" alt="image" height="40" width="40"></a>
+		    				<a class="text-bl" style="font-size: 20px" 	href="https://tekerala.org/dip_res_apr.htm" target="_blank">Result April 2019 -- <!--img src="images/new.png" alt="image" height="40" width="40" --></a>		  
+		    				<a class="text-bl" style="font-size: 20px" 	href="MALAYALAM_8(W)X18(H) CM_SCHOLARSHIP AD_KERALA_CC_MM_Matra bhumi.pdf" target="_blank">MAHINDRA ALL INDIA TALENT SCHOLARSHIP AWARD <img src="images/new.png" alt="image" height="40" width="40" ></a>
 		    			</marquee>
 		    		</div>
     			</div>
-    		</div> -->
+    		</div>
 		</section>
 
 
@@ -542,12 +542,12 @@
 					<div class="col-lg-4" style="margin-bottom: 10px">
 						<h5  class="bg-light heading">External Links<span class="float-right"><i class="fa fa-link"></i></span></h5>
 						<div style="margin-bottom: 10px;" >
-								<a  href="#" class=" text-wh external-links-a">
+								<a  href="https://tekerala.org/" class=" text-wh external-links-a">
 									<span class="bg-white external-links-span"><i class="fa fa-edit padding10" aria-hidden='true'></i></span>&nbsp;&nbsp;Exam registration
 								</a>
 							</div>
 							<div style="margin-bottom: 10px;" >
-								<a  href="#" class=" text-wh external-links-a">
+								<a  href="http://www.sitttrkerala.ac.in" class=" text-wh external-links-a">
 									<span class="bg-white external-links-span"><i class="fa fa-book padding10" aria-hidden='true'></i></span>&nbsp;&nbsp;Syllabus and curriculum
 								</a>
 							</div>
